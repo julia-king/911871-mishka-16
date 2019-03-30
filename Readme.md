@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Юлия Зиатдинова](https://up.htmlacademy.ru/adaptive/16/user/911871).
-* Наставник: `Неизвестно`.
+* Наставник: [Анна Лёмина](https://htmlacademy.ru/profile/id83874).
 
 ---
 
