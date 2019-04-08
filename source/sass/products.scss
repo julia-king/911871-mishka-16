@@ -1,16 +1,11 @@
 .products {
-
   min-height: 283px;
   background: url("../img/hero-mobile@1x.jpg") top center;
 }
 
-
 .products__title {
   margin: 0;
-  padding-top: 80px;
-  padding-bottom: 100px;
-  padding-left: 30px;
-  padding-right: 20px;
+  padding: 80px 20px 100px 30px;
   font-size: 27px;
   color: rgb(1, 0, 0);
   line-height: 30px;
@@ -19,6 +14,7 @@
 
 .products__list {
   padding-top: 40px;
+
   a {
     font-size: 19px;
     color: rgb(255, 255, 255);
@@ -33,9 +29,11 @@
   padding-top: 20px;
   padding-left: 30px;
   padding-bottom: 20px;
+
   &--interior {
     background-color: #63d1bb;
   }
+
   &--toys {
     background-color: #56c3b2;
   }
