@@ -1,0 +1,62 @@
+.featured {
+  padding-left: 30px;
+  padding-bottom: 20px;
+}
+
+.featured__name {
+  padding-top: 20px;
+
+}
+
+.featured__title {
+  margin: 0;
+  font-size: 25px;
+  color: rgb(0, 0, 0);
+  line-height: 30px;
+  text-align: left;
+}
+
+.featured__item-of-week {
+  margin: 0;
+  font-size: 17px;
+  color: rgb(99, 209, 187);
+  text-transform: uppercase;
+  line-height: 20px;
+  text-align: left;
+}
+
+.featured__description {
+  font-size: 15px;
+  font-weight: 400;
+  color: rgb(68, 68, 68);
+  line-height: 24px;
+  text-align: left;
+}
+
+.featured__list {
+  padding-bottom: 20px;
+  font-size: 15px;
+  font-weight: 400;
+  color: rgb(68, 68, 68);
+  line-height: 20px;
+  text-align: left;
+}
+
+.featured__price {
+  font-size: 17px;
+  color: rgb(68, 68, 68);
+  line-height: 24px;
+  text-align: center;
+}
+
+.featured__button {
+  width: 260px;
+  padding: 10px 50px 10px 50px;
+  font-size: 17px;
+  color: rgb(68, 68, 68);
+  text-transform: uppercase;
+  line-height: 20px;
+  text-align: center;
+  background-color: #ffffff;
+  border: 2px solid #444444;
+}
