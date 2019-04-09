@@ -1,0 +1,14 @@
+.about {
+  padding-top: 20px;
+  padding-left: 30px;
+}
+
+.about__title {
+  font-size: 25px;
+  line-height: 30px;
+  text-align: left;
+}
+
+.about__list {
+  @include reset-list;
+}
