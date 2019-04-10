@@ -28,9 +28,3 @@
     display: flex;
   }
 }
-
-@media (min-width: $desktop-width) {
-  .main-nav__wrapper {
-    width: 1050px;
-  }
-}
