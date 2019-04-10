@@ -35,17 +35,16 @@
     background-color: #56c3b2;
   }
 }
-
 @media (min-width: $tablet-width) {
   .products-title {
     min-height: 630px;
     background: url("../img/hero-tablet@1x.jpg");
   }
+
   .products__list {
     display: flex;
   }
 }
-
 @media (min-width: $desktop-width) {
   .products-title {
     background: url("../img/hero-desktop@1x.jpg");

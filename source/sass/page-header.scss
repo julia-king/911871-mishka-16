@@ -6,11 +6,10 @@
 .page-header__logo {
   height: 79px;
 }
-
 @media (min-width: $tablet-width) {
   .page-header {
     display: flex;
-    flex-direction: row
+    flex-direction: row;
   }
 
   .page-header__logo {
