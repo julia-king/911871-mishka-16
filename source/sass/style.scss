@@ -1,4 +1,6 @@
 @import "mixin.scss";
+@import "variables.scss";
+@import "page-header.scss";
 @import "main-nav.scss";
 @import "products.scss";
 @import "featured.scss";
@@ -7,15 +9,24 @@
 @import "copyright.scss";
 @import "page-catalog.scss";
 @import "catalog-products.scss";
+@import "page-footer.scss";
 
 body {
-  width: 380px;
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+
   font-size: 17px;
   line-height: 24px;
   font-family: "OpenSans", sans-serif;
   color: rgb(0, 0, 0);
   font-weight: 700;
   background: white;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 .visually-hidden:not(:focus):not(:active) {

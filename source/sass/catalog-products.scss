@@ -1,3 +1,8 @@
+.catalog-products__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
 .catalog-products__list {
   @include reset-list;
   padding-right: 30px;
@@ -34,4 +39,16 @@
 
 .catalog-products__buy {
   padding-top: 30px;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog-products__item {
+    display: flex;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog-products__list {
+    display: flex;
+  }
 }
