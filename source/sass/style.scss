@@ -1,35 +1,15 @@
 @import "mixin.scss";
+@import "variables.scss";
+@import "index.scss";
+@import "page-header.scss";
 @import "main-nav.scss";
 @import "products.scss";
-@import "featured.scss";
+@import "promo.scss";
 @import "about.scss";
 @import "social.scss";
 @import "copyright.scss";
 @import "page-catalog.scss";
-@import "catalog-products.scss";
-
-body {
-  width: 380px;
-  font-size: 17px;
-  line-height: 24px;
-  font-family: "OpenSans", sans-serif;
-  color: rgb(0, 0, 0);
-  font-weight: 700;
-  background: white;
-}
-
-.visually-hidden:not(:focus):not(:active) {
-  position: absolute;
-
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-
-  white-space: nowrap;
-
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
+@import "catalog.scss";
+@import "page-footer.scss";
+@import "product.scss";
+@import "features.scss";

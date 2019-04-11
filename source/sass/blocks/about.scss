@@ -12,3 +12,9 @@
 .about__list {
   @include reset-list;
 }
+
+@media (min-width: $tablet-width) {
+  .about__list {
+    display: flex;
+  }
+}
