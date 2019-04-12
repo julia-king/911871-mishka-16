@@ -35,6 +35,95 @@
 
     </nav>
   </header>
+  <main class="page-form">
+    <h1 class="visually-hidden">Форма заказа</h1>
+    <section class="form">
+      <h3 class="form__title">Вязание на заказ</h3>
+      <div class="form__wrapper">
+        <p class="form__entry">
+          Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
+        </p>
+
+
+        <form class="form__filter order-form" method="get" action="https://echo.htmlacademy.ru/">
+          <fieldset class="order-form__radio form-radio">
+            <legend>Тип</legend>
+            <ul class="form-radio__filter">
+              <li class="form-radio__selection">
+                <input class="form-radio__input" type="radio" name="toy" value="interior" id="interior" checked="">
+                <label for="interior">Аксессуар для интерьера</label>
+              </li>
+              <li class="form-radio__selection">
+                <input class="form-radio__input" type="radio" name="toy" value="child" id="child">
+                <label for="child">Детская игрушка</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="order-form__checkbox form-checkbox">
+            <legend>Цвет</legend>
+            <ul class="form-checkbox__filter">
+              <li class="form-checkbox__selection">
+                <input class="form-checkbox__input" type="checkbox" name="white" id="white" checked="">
+                <label for="white">Белый</label>
+              </li>
+              <li class="form-checkbox__selection">
+                <input class="form-checkbox__input" type="checkbox" name="grey" id="grey" checked="">
+                <label for="grey">Серый</label>
+              </li>
+              <li class="form-checkbox__selection">
+                <input class="form-checkbox__input" type="checkbox" name="tiffany" id="tiffany">
+                <label for="tiffany">"Тиффани"</label>
+              </li>
+              <li class="form-checkbox__selection">
+                <input class="form-checkbox__input" type="checkbox" name="black" id="black">
+                <label for="black">Черный</label>
+              </li>
+              <li class="form-checkbox__selection">
+                <input class="form-checkbox__input" type="checkbox" name="pink" id="pink">
+                <label for="pink">Розовый</label>
+              </li>
+              <li class="form-checkbox__selection">
+                <input class="form-checkbox__input" type="checkbox" name="orange" id="orange">
+                <label for="orange">Оранжевый</label>
+              </li>
+            </ul>
+          </fieldset>
+
+          <div class="order-form__client form-client">
+            <div class="form-client__name">
+              <p class="form-client__firstname">Имя:
+                <input type="text" name="firstname" placeholder="Введите ваше имя*">
+              </p>
+              <p class="form-client__lastname">Фамилия:
+                <input type="text" name="lastname" placeholder="Укажите вашу фамилию*">
+              </p>
+              <p class="form-client__patronymic">Отчество:
+                <input type="text" name="patronymic" placeholder="Отчество, если желаете">
+              </p>
+            </div>
+
+            <div class="form-client__info">
+              <p class="form-client__tel">Тел
+                <input type="tel" name="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
+              </p>
+              <p class="form-client__email">E-mail
+                <input type="email" name="email" placeholder="Ваш Email*">
+              </p>
+              <p class="form-client__wishes">Доп
+                <input class="" type="text" name="wishes" placeholder="Опишите все ваши пожелания к заказу">
+              </p>
+            </div>
+            <small class="form-client__required">
+              <sup>*</sup>Поля обязательные для заполнения
+            </small>
+          </div>
+
+
+          <button class="order-form__button button" type="submit">Отправить заказ</button>
+        </form>
+      </div>
+    </section>
+  </main>
 
 
   <footer class="page-footer">
