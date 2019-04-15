@@ -2,6 +2,10 @@
   background-color: #f1f1f1;
 }
 
+.page-footer__logo {
+  display: none;
+}
+
 .page-footer__social {
   display: flex;
 }
@@ -13,5 +17,19 @@
 @media (min-width: $tablet-width) {
   .page-footer {
     display: flex;
+  }
+
+  .page-footer__logo {
+    display: block;
+    width: 27%;
+  }
+
+  .page-footer__social {
+    width: 27%;
+  }
+
+  .page-footer__copyright {
+    width: 27%;
+    margin-left: auto;
   }
 }

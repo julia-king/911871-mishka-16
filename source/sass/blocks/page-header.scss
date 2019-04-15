@@ -4,17 +4,31 @@
 }
 
 .page-header__logo {
+  position: relative;
+  padding-top: 20px;
   height: 80px;
+  text-align: center;
+}
+
+.page-header__logo img {
+  width: 86px;
+  height: 35px;
 }
 
 @media (min-width: $tablet-width) {
   .page-header {
+    width: 668px;
     display: flex;
     flex-direction: row;
   }
 
   .page-header__logo {
-    order: 1;
     height: 90px;
+    order: 3;
+  }
+
+  .page-header__logo img {
+    width: 113px;
+    height: auto;
   }
 }
