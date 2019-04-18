@@ -11,7 +11,10 @@
 }
 
 @media (min-width: $desktop-width) {
-  .menu__item {
-    margin-right: 20px;
+
+  .menu {
+    display: block;
+    width: 525px;
+    order: 3;
   }
 }

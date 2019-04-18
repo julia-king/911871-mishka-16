@@ -77,9 +77,9 @@
   .user-list {
     display: flex;
     order: 1;
-    position: absolute;
-    top: 30px;
-    right: 10px;
+    width: 350px;
+    flex-grow: 1;
+    justify-content: flex-end;
   }
 
   .user-list a {
@@ -87,10 +87,44 @@
     padding: 0;
     border: none;
   }
+
+  .user-list__item {
+    align-items: center;
+  }
+
+  .user-list__item--search {
+    border: 1px solid #ececec;
+  }
+
+  .user-list__item--basket {
+    width: 314px;
+    margin-right: 50px;
+  }
+
+  .user-list__item--search a {
+    width: 82px;
+    height: 88px;
+  }
+
+  .user-list__item--basket a {
+    padding-left: 83px;
+    margin-left: auto;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .user-list {
-    order: 3;
+    justify-content: flex-start;
+    box-sizing: border-box;
+    padding-left: 100px;
+    width: 40%;
+    flex-grow: 1;
+    order: 2;
   }
+
+  .user-list__item {
+    &--cart {
+      margin-right: 0;
+      width: 266px;
+    }
 }

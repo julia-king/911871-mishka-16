@@ -24,10 +24,12 @@
 @media (min-width: $tablet-width) {
   .site-list {
     display: flex;
+    width: 430px;
+    margin-top: 16px;
+    margin-right: auto;
+    padding-left: 50px;
     order: 2;
-    position: absolute;
-    top: 100px;
-    left: 0;
+    flex-grow: 1;
   }
 
   .site-list a {
@@ -43,19 +45,34 @@
   .site-list__delivery {
     order: 3;
     display: block;
-    position: absolute;
-    top: 100px;
-    right: 10px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .site-list {
-    order: 1;
-    position: initial;
+
+
+  .site-list__delivery  {
+      order: 4;
+      display: block;
+      width: 525px;
+
+      text-align: right;
   }
 
-  .site-list__delivery {
-    order: 5;
-  }
+  .site-list {
+   box-sizing: border-box;
+   width: 40%;
+   margin-top: 0;
+   padding-left: 0;
+   padding-right: 60px;
+   align-items: center;
+   justify-content: flex-end;
+   order: 0;
+   flex-grow: 1;
+
+
+ }
+
+
+
 }
