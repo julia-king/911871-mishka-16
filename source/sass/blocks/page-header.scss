@@ -34,17 +34,17 @@
     height: auto;
   }
 }
+
 @media (min-width: $tablet-width) {
-.page-header__logo {
-  padding-left: 0;
-  width: 149px;
-  min-height: 72px;
-  order: 1;
-}
+  .page-header__logo {
+    padding-left: 0;
+    width: 149px;
+    min-height: 72px;
+    order: 1;
+  }
 
-.page-header__logo img {
-  width: 149px;
-  height: 72px;
-}
-
+  .page-header__logo img {
+      width: 149px;
+      height: 72px;
+  }
 }
