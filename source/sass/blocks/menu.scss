@@ -1,0 +1,19 @@
+.menu__item a:hover {
+  opacity: 0.6;
+}
+
+.menu__item a:focus {
+  opacity: 0.6;
+}
+
+.menu__item a:active {
+  opacity: 0.3;
+}
+
+@media (min-width: $desktop-width) {
+  .menu {
+    display: block;
+    width: 525px;
+    order: 3;
+  }
+}

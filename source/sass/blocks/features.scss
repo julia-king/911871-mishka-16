@@ -3,3 +3,16 @@
   line-height: 20px;
   text-align: left;
 }
+
+@media (min-width: $tablet-width) {
+  .features {
+    justify-content: center;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    margin: auto;
+  }
+
+  .features__item {
+    width: 50%;
+  }
+}

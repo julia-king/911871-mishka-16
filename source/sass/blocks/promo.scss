@@ -1,5 +1,4 @@
 .promo {
-  padding-left: 30px;
   padding-bottom: 20px;
 }
 
@@ -50,10 +49,7 @@
 
 .promo__button {
   width: 260px;
-  padding-top: 10px;
-  padding-left: 50px;
-  padding-right: 50px;
-  padding-bottom: 10px;
+  padding: 10px 50px;
   font-size: 17px;
   color: #444444;
   text-transform: uppercase;
@@ -64,8 +60,47 @@
 }
 
 @media (min-width: $tablet-width) {
+  .promo {
+    position: relative;
+    width: 668px;
+    margin: 0 auto;
+  }
+
   .promo__wrapper {
+    margin-top: 50px;
     display: flex;
-    flex-direction: column;
+  }
+
+  .promo__name {
+    width: 100%;
+    position: absolute;
+    top: -30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0;
+  }
+
+  .promo__text {
+    width: 45%;
+    margin-right: 5%;
+  }
+
+  .promo__price {
+    width: 50%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promo {
+    width: 1050px;
+  }
+
+  .promo__title {
+    order: 2;
+  }
+
+  .promo__item-of-week {
+    order: 1;
   }
 }
