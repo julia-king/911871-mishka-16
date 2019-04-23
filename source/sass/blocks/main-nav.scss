@@ -1,12 +1,14 @@
 .main-nav {
-  width: 320px;
   min-height: 51px;
-  margin: 0 auto;
 
   a {
     color: rgb(0, 0, 0);
     text-decoration: none;
   }
+}
+
+.main-nav__wrapper {
+  margin: 0 auto;
 }
 
 .main-nav__toggle {
@@ -41,6 +43,19 @@
   width: 21px;
   height: 20px;
   background-image: url("../img/icon-menu-close.svg");
+}
+
+.main-nav__logo {
+  height: 90px;
+  order: 0;
+  display: flex;
+  align-items: center;
+  width: 320px;
+}
+
+.main-nav__logo img {
+  width: 113px;
+  height: auto;
 }
 
 .main-nav__site-list {
@@ -89,13 +104,23 @@
 
   .main-nav__wrapper {
     display: flex;
-    margin: 0 auto;
     flex-wrap: wrap;
-    width: 100%;
   }
 
   .main-nav__toggle {
     display: none;
+  }
+
+  .main-nav__logo {
+    padding-left: 0;
+    width: 149px;
+    min-height: 72px;
+    order: 1;
+  }
+
+  .main-nav__logo img {
+    width: 149px;
+    height: 72px;
   }
 
   .main-nav__list {

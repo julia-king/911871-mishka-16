@@ -4,6 +4,96 @@
   text-align: left;
 }
 
+.features__item--ecology {
+  position: relative;
+}
+
+.features__item--scandinavian {
+  position: relative;
+}
+
+.features__item--like {
+  position: relative;
+}
+
+.features__item--handmade {
+  position: relative;
+}
+
+.features__item--national {
+  position: relative;
+}
+
+.features__item--gift {
+  position: relative;
+}
+
+.features__item--ecology::before {
+  content: "";
+  position: absolute;
+
+  width: 31px;
+  height: 37px;
+  background-image: url("../img/icon-feature-flower.svg");
+  background-repeat: no-repeat;
+  background-size: 31px 37px;
+}
+
+.features__item--scandinavian::before {
+  content: "";
+  position: absolute;
+
+  width: 46px;
+  height: 27px;
+  background-image: url("../img/icon-feature-money.svg");
+  background-repeat: no-repeat;
+  background-size: 46px 27px;
+}
+
+.features__item--like::before {
+  content: "";
+  position: absolute;
+
+  width: 33px;
+  height: 27px;
+  background-image: url("../img/icon-feature-heart.svg");
+  background-size: 33px 27px;
+}
+
+.features__item--handmade::before {
+  content: "";
+  position: absolute;
+
+  width: 34px;
+  height: 34px;
+  background-image: url("../img/icon-feature-ball.svg");
+  background-repeat: no-repeat;
+  background-size: 34px 34px;
+}
+
+.features__item--national::before {
+  content: "";
+  position: absolute;
+
+  width: 54px;
+  height: 23px;
+  background-image: url("../img/icon-feature-rocket.svg");
+  background-repeat: no-repeat;
+  background-size: 54px 23px;
+}
+
+.features__item--gift::before {
+  content: "";
+  position: absolute;
+
+  width: 32px;
+  height: 32px;
+  background-image: url("../img/icon-feature-gift.svg");
+  background-repeat: no-repeat;
+  background-size: 32px 32px;
+}
+
+
 @media (min-width: $tablet-width) {
   .features {
     justify-content: center;
