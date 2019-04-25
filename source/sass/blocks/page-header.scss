@@ -7,6 +7,7 @@
 .page-header__wrapper {
   width: 320px;
   margin: 0 auto;
+  padding: 0 30px;
   display: flex;
 }
 
@@ -29,14 +30,17 @@
   }
 
   .page-header__wrapper {
-    width: 668px;
+    min-width: 768px;
+    max-width: 1050px;
     margin: 0 auto;
+    padding: 0 50px;
   }
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: $desktop-width) {
   .page-header__wrapper {
-    width: 1050px;
+    min-width: 1050px;
+    max-width: 1150px;
     margin: 0 auto;
   }
 }

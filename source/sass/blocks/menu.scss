@@ -12,7 +12,7 @@
 
 @media (min-width: $desktop-width) {
   .menu {
-    display: block;
+    display: flex;
     width: 525px;
     order: 3;
   }

@@ -90,11 +90,18 @@
 
   .user-list__item {
     display: flex;
+    justify-content: center;
+    justify-items: center;
     align-items: center;
   }
 
   .user-list__item--search {
+    width: 82px;
     border: 1px solid #ececec;
+  }
+
+  .user-list__item--hidden {
+    font-size: 0;
   }
 
   .user-list__item--basket {
@@ -102,13 +109,7 @@
     margin-right: 50px;
   }
 
-  .user-list__item--search a {
-    width: 82px;
-    height: 88px;
-  }
-
   .user-list__item--basket a {
-    padding-left: 83px;
     margin-left: auto;
   }
 }
@@ -121,9 +122,5 @@
     width: 40%;
     flex-grow: 1;
     order: 2;
-  }
-
-  .user-list__item {
-    width: 266px;
   }
 }
