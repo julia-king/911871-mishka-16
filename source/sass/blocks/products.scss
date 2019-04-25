@@ -1,6 +1,5 @@
 .products {
-  width: 320px;
-  margin: 0 auto;
+  width: 100%;
   margin-top: -21px;
   margin-bottom: 27px;
   background-color: #fafafa;
@@ -8,6 +7,12 @@
   background-repeat: no-repeat;
   background-size: auto 373px;
   background-position: 50% 0;
+}
+
+.products__wrapper {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0 30px;
 }
 
 @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -55,16 +60,19 @@
 @media (min-width: $tablet-width) {
   .products {
     position: relative;
-    width: auto;
     min-height: 660px;
-    padding-left: 50px;
-    padding-right: 50px;
-    margin: 0 auto;
     margin-top: -68px;
     margin-bottom: 45px;
     background-image: url("../img/hero-tablet@1x.jpg");
     background-size: auto 744px;
     background-position: center;
+  }
+
+  .products__wrapper {
+    min-width: 768px;
+    max-width: 1050px;
+    margin: 0 auto;
+    padding: 0 50px;
   }
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -90,11 +98,15 @@
 
 @media (min-width: $desktop-width) {
   .products {
-    width: auto;
-    margin: 0 auto;
     margin-bottom: 35px;
     margin-top: -72px;
     background-image: url("../img/hero-desktop@1x.jpg");
+  }
+
+  .products__wrapper {
+    min-width: 1050px;
+    max-width: 1150px;
+    margin: 0 auto;
   }
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
