@@ -58,7 +58,7 @@
 
 @media (min-width: $tablet-width) {
   .product {
-    padding-bottom: 0px;
+    padding-bottom: 0;
   }
 
   .product__item {
@@ -83,7 +83,7 @@
 
   .product__buy {
     width: 100%;
-    padding-right: 0px;
+    padding-right: 0;
   }
 }
 

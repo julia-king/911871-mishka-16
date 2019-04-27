@@ -108,11 +108,10 @@
 
   .features__item {
     width: 50%;
-
   }
 
   .features__text {
-    margin: 0px;
+    margin: 0;
   }
 
   .features__item--ecology {
@@ -138,8 +137,4 @@
   .features__item--gift {
     order: 6;
   }
-}
-
-@media (min-width: $desktop-width) {
-
 }

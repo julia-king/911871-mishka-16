@@ -262,8 +262,8 @@
   }
 
   .form-client__mail-wrapper {
-      display: flex;
-      flex-direction: row;
+    display: flex;
+    flex-direction: row;
   }
 
   .form-client__parameter--phone {
@@ -284,11 +284,6 @@
     font-size: 19px;
     line-height: 18px;
     padding-bottom: 16px;
-  }
-
-  .form-client__parameter-wrapper {
-    display: flex;
-    padding-bottom: 0;
   }
 
   .form-client__item--phone {

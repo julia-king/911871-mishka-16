@@ -50,7 +50,6 @@
     display: block;
     margin-top: 16px;
     font-size: 15px;
-
   }
 }
 
@@ -60,7 +59,7 @@
     order: 4;
     display: block;
     text-align: right;
-    margin-top: 0px;
+    margin-top: 0;
   }
 
   .site-list {
@@ -74,6 +73,6 @@
   }
 
   .site-list__item {
-    margin-right: 0px;
+    margin-right: 0;
   }
 }
