@@ -1,9 +1,9 @@
 .form-checkbox__filter {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    padding-top: 60px;
-    padding-bottom: 15px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  padding-top: 60px;
+  padding-bottom: 15px;
 }
 
 .form-checkbox__name {
@@ -47,13 +47,13 @@
 }
 
 .form-checkbox__filter label::before {
-   top: -13px;
-   left: 20px;
+  top: -13px;
+  left: 20px;
 }
 
 .form-checkbox__filter input:checked + label::after {
-   top: 4px;
-   left: 31px;
+  top: 4px;
+  left: 31px;
 }
 
 .form-checkbox__selection label::before {
