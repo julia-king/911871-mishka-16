@@ -70,20 +70,20 @@
 .form-radio__selection {
   padding-top: 48px;
   padding-bottom: 15px;
- }
+}
 
 .form-radio__selection label::before {
   top: -13px;
   width: 52px;
   height: 52px;
- }
+}
 
 .form-radio__selection input:checked + label::after {
   top: 2px;
   left: 15px;
   width: 22px;
   height: 22px;
- }
+}
 
 .form-radio__selection label {
   padding-top: 2px;
@@ -91,7 +91,7 @@
   padding-left: 82px;
   font-size: 19px;
   line-height: 18px;
- }
+}
 
 @media (min-width: $tablet-width) {
   .form-radio__wrapper {
