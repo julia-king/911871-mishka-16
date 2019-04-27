@@ -50,12 +50,22 @@
   order: 0;
   display: flex;
   align-items: center;
-  width: 320px;
+  justify-content: center;
 }
 
 .main-nav__logo img {
   width: 113px;
   height: auto;
+  cursor: pointer;
+}
+
+.main-nav__logo:hover img,
+.main-nav__logo:focus img {
+  opacity: 0.6;
+}
+
+.main-nav__logo:active img {
+  opacity: 0.3;
 }
 
 .main-nav__site-list {
@@ -116,6 +126,7 @@
     width: 149px;
     min-height: 72px;
     order: 1;
+    padding-bottom: 10px;
   }
 
   .main-nav__logo img {

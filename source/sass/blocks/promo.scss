@@ -1,106 +1,309 @@
 .promo {
-  padding-bottom: 20px;
+  position: relative;
+  padding-bottom: 42px;
+}
+
+.promo::after {
+  content: "";
+  position: absolute;
+  background-image: url("../img/bg-zigzag-line.svg");
+  width: 100%;
+  height: 7px;
+  bottom: 0;
+  background-repeat: repeat-x;
+  background-size: 320px 100%;
+  background-position: 50% 100%;
+  transform: rotate(180deg);
+}
+
+.promo__wrapper {
+  width: 260px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .promo__name {
-  padding-top: 20px;
+  padding-bottom: 23px;
 }
 
 .promo__title {
   margin: 0;
+  color: #010000;
+  font-family: "Open-Sans-Bold", "Arial", sans-serif;
   font-size: 25px;
-  color: #000000;
   line-height: 30px;
-  text-align: left;
+  padding-bottom: 4px;
 }
 
 .promo__item-of-week {
-  margin: 0;
+  font-family: "Open-Sans-Bold", "Arial", sans-serif;
   font-size: 17px;
-  color: #63d1bb;
-  text-transform: uppercase;
   line-height: 20px;
-  text-align: left;
+  text-transform: uppercase;
+  color: #63d1bb;
 }
 
 .promo__description {
   font-size: 15px;
   font-weight: 400;
-  color: #444444;
   line-height: 24px;
-  text-align: left;
+  padding-bottom: 18px;
 }
 
 .promo__list {
-  padding-bottom: 20px;
+  width: 100%;
   font-size: 15px;
   font-weight: 400;
-  color: #444444;
   line-height: 20px;
-  text-align: left;
+  border-collapse: collapse;
+  margin-bottom: 28px;
+}
+
+.promo__feature {
+  border-bottom: 1px solid #ececec;
+}
+
+.promo__characteristic {
+  padding-right: 13px;
+  padding-top: 8px;
+  padding-bottom: 11px;
+}
+
+.promo__picture {
+  width: 260px;
+  height: 315px;
+  background-color: #fbfbfb;
+  margin-bottom: 25px;
 }
 
 .promo__price {
+  display: flex;
+  justify-content: center;
+  font-family: "Open-Sans-Bold", "Arial", sans-serif;
   font-size: 17px;
-  color: #444444;
   line-height: 24px;
-  text-align: center;
-}
-
-.promo__button {
-  width: 260px;
-  padding: 10px 50px;
-  font-size: 17px;
-  color: #444444;
-  text-transform: uppercase;
-  line-height: 20px;
-  text-align: center;
-  background-color: #ffffff;
-  border: 2px solid #444444;
+  padding-bottom: 25px;
+  margin: 0;
 }
 
 @media (min-width: $tablet-width) {
   .promo {
-    position: relative;
+    padding-bottom: 15px;
+    margin-bottom: 49px;
+  }
+
+  .promo::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    min-width: 768px;
+    height: 17px;
+    max-height: 23px;
+    margin: 0;
+    margin-top: 26px;
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 100% 100%;
+    transform: rotate(180deg);
+  }
+
+  .promo__wrapper {
     width: 668px;
     margin: 0 auto;
   }
 
-  .promo__wrapper {
-    margin-top: 50px;
+  .promo__elements-wrapper {
+    min-width: 662px;
+    height: 465px;
     display: flex;
+    flex-flow: column wrap;
   }
 
   .promo__name {
-    width: 100%;
-    position: absolute;
-    top: -30px;
     display: flex;
+    flex-flow: row;
     justify-content: space-between;
-    align-items: center;
-    padding-top: 0;
+    order: 0;
+    padding-bottom: 30px;
   }
 
-  .promo__text {
-    width: 45%;
-    margin-right: 5%;
+  .promo__description {
+    display: flex;
+    width: 282px;
+    font-size: 17px;
+    line-height: 30px;
+    padding-bottom: 35px;
+    order: 2;
+    color: #444444;
+  }
+
+  .promo__list {
+    border-collapse: collapse;
+    width: 290px;
+    margin-left: 0;
+    font-size: 15px;
+    line-height: 20px;
+    margin-bottom: 56px;
+    order: 3;
   }
 
   .promo__price {
-    width: 50%;
+    width: 287px;
+    align-self: flex-start;
+    align-items: center;
+    font-family: "Open-Sans-Bold", "Arial", sans-serif;
+    font-size: 20px;
+    line-height: 24px;
+    padding-bottom: 34px;
+    order: 4;
+  }
+
+  .promo__button {
+    width: 290px;
+    order: 5;
+    padding-top: 14px;
+    padding-bottom: 14px;
+  }
+
+  .promo__title {
+    font-family: "Open-Sans-Bold", "Arial", sans-serif;
+    font-size: 43px;
+    line-height: 50px;
+    color: #000000;
+  }
+
+  .promo__characteristic {
+    width: 67px;
+    padding-right: 26px;
+    padding-bottom: 11px;
+  }
+
+  .promo__item-of-week {
+    width: 70px;
+    padding-top: 12px;
+    padding-bottom: 24px;
+    padding-right: 28px;
+    text-align: center;
+    line-height: 17px;
+    color: #63d1bb;
+  }
+
+  .promo__picture {
+    width: 333px;
+    height: 404px;
+    order: 6;
+    align-self: flex-end;
+    margin-top: 8px;
+    margin-bottom: 0;
+  }
+
+  .promo__picture img {
+    width: 333px;
+    height: 404px;
+  }
+
+  .promo__feature {
+    width: 300px;
+    color: #444444;
   }
 }
 
 @media (min-width: $desktop-width) {
   .promo {
-    width: 1050px;
+    margin-bottom: 23px;
+    background-size: 0;
   }
 
-  .promo__title {
-    order: 2;
+  .promo::after {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 1050px;
+    height: 23px;
+    margin: 0;
+    margin-left: -526px;
+    padding-top: 0;
+    background-position: 50% 50%;
+    transform: rotate(180deg);
+  }
+
+  .promo__wrapper {
+    width: 1050px;
+    margin: 0 auto;
+    padding-bottom: 90px;
+  }
+
+  .promo__elements-wrapper {
+    position: relative;
+    max-width: 1050px;
+    min-height: 700px;
+  }
+
+  .promo__name {
+    width: 610px;
+    position: absolute;
+    z-index: 1;
+    padding-top: 90px;
+    padding-bottom: 37px;
+    padding-left: 45px;
+    flex-direction: row-reverse;
   }
 
   .promo__item-of-week {
-    order: 1;
+    padding-right: 0;
+    padding-top: 15px;
+  }
+
+  .promo__title {
+    font-family: "Open-Sans-Bold", "Arial", sans-serif;
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .promo__description {
+    padding-top: 195px;
+    padding-left: 175px;
+    padding-bottom: 49px;
+  }
+
+  .promo__list {
+    width: 296px;
+    margin-left: 173px;
+  }
+
+  .promo__price {
+    width: 150px;
+    padding-bottom: 35px;
+    padding-left: 245px;
+  }
+
+  .promo__button {
+    margin-left: 176px;
+  }
+
+  .promo__characteristic {
+    padding-top: 8px;
+    padding-bottom: 11px;
+    padding-right: 30px;
+  }
+
+  .promo__value {
+    padding-top: 8px;
+    padding-bottom: 11px;
+  }
+
+  .promo__picture {
+    width: 525px;
+    height: 636px;
+    margin-top: 38px;
+  }
+
+  .promo__picture img {
+    width: 525px;
+    height: 636px;
   }
 }

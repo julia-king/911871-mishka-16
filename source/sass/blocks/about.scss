@@ -1,5 +1,12 @@
 .about {
-  margin: auto;
+  width: 100%
+}
+
+.about__wrapper {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0 30px;
+  box-sizing: border-box;
 }
 
 .about__title {
@@ -14,11 +21,24 @@
 
 @media (min-width: $tablet-width) {
   .about__wrapper {
-    width: 668px;
-    margin: auto;
+    min-width: 768px;
+    max-width: 1050px;
+    margin: 0 auto;
+    padding: 0 50px;
+    box-sizing: border-box;
   }
 
   .about__list {
     display: flex;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .about__wrapper {
+    min-width: 1050px;
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 0 170px;
+    box-sizing: border-box;
   }
 }

@@ -1,4 +1,9 @@
+.features__item {
+  padding-bottom: 30px;
+}
+
 .features__text {
+  padding-top: 50px;
   font-size: 17px;
   line-height: 20px;
   text-align: left;
@@ -97,12 +102,44 @@
 @media (min-width: $tablet-width) {
   .features {
     justify-content: center;
-    align-items: flex-end;
     flex-wrap: wrap;
     margin: auto;
   }
 
   .features__item {
     width: 50%;
+
   }
+
+  .features__text {
+    margin: 0px;
+  }
+
+  .features__item--ecology {
+    order: 0;
+  }
+
+  .features__item--scandinavian {
+    order: 3;
+  }
+
+  .features__item--like {
+    order: 5;
+  }
+
+  .features__item--handmade {
+    order: 2;
+  }
+
+  .features__item--national {
+    order: 4;
+  }
+
+  .features__item--gift {
+    order: 6;
+  }
+}
+
+@media (min-width: $desktop-width) {
+
 }

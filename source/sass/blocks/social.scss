@@ -10,6 +10,16 @@
   margin: 0 auto;
 }
 
+.social__link:hover svg,
+.social__link:focus svg {
+  fill: #46c1ae;
+}
+
+.social__link:active svg {
+  opacity: 0.3;
+  fill: #46c1ae;
+}
+
 @media (min-width: $tablet-width) {
   .social__list {
     width: 250px;

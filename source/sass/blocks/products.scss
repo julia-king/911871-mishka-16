@@ -7,12 +7,22 @@
   background-repeat: no-repeat;
   background-size: auto 373px;
   background-position: 50% 0;
+  border-top: 1px solid #ececec;
+}
+
+.products__title {
+  font-family: "Open-Sans-Bold", "Arial", sans-serif;
 }
 
 .products__wrapper {
   width: 320px;
   margin: 0 auto;
-  padding: 0 30px;
+  box-sizing: border-box;
+}
+
+.products__link {
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -41,6 +51,10 @@
     line-height: 24px;
     text-align: left;
     text-decoration: none;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    font-family: "Open-Sans-Bold", "Arial", sans-serif;
   }
 }
 
@@ -57,6 +71,24 @@
   }
 }
 
+.products__link--interior svg {
+  opacity: 0.5;
+  fill: #149080;
+}
+
+.products__link--toys svg {
+  opacity: 0.5;
+  fill: #149080;
+}
+
+.products__link--interior:hover svg {
+  opacity: 0.7;
+}
+
+.products__link--toys:hover svg {
+  opacity: 0.7;
+}
+
 @media (min-width: $tablet-width) {
   .products {
     position: relative;
@@ -68,11 +100,28 @@
     background-position: center;
   }
 
+  .products::after {
+   content: "";
+   position: absolute;
+   bottom: -12px;
+   left: 0;
+   display: block;
+   width: 100%;
+   height: 23px;
+   max-height: 23px;
+   padding-top: 0;
+   background-image: url("../img/bg-zigzag-fill.svg");
+   background-repeat: repeat-x;
+   background-size: 768px 100%;
+   background-position: 50% 100%;
+ }
+
   .products__wrapper {
     min-width: 768px;
     max-width: 1050px;
     margin: 0 auto;
     padding: 0 50px;
+    box-sizing: border-box;
   }
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -107,6 +156,7 @@
     min-width: 1050px;
     max-width: 1150px;
     margin: 0 auto;
+    box-sizing: border-box;
   }
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
