@@ -69,13 +69,6 @@
   cursor: pointer;
 }
 
-.form-radio__selection input:checked + label::after {
-  top: 2px;
-  left: 15px;
-  width: 22px;
-  height: 22px;
-}
-
 @media (min-width: $tablet-width) {
   .form-radio__wrapper {
     width: 668px;
