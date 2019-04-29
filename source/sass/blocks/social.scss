@@ -1,10 +1,27 @@
 .social__list {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  align-items: center;
 
   @include reset-list;
 
   padding-bottom: 30px;
   padding-top: 20px;
-  text-align: center;
+  margin: 0 auto;
+}
+
+.social__link:hover svg,
+.social__link:focus svg {
+  fill: #46c1ae;
+}
+
+.social__link:active svg {
+  opacity: 0.3;
+  fill: #46c1ae;
+}
+
+@media (min-width: $tablet-width) {
+  .social__list {
+    width: 250px;
+  }
 }
