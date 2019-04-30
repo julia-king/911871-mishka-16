@@ -30,14 +30,14 @@
 .promo__title {
   margin: 0;
   color: #010000;
-  font-family: "Open-Sans-Bold", "Arial", sans-serif;
+  font-family: $fonts;
   font-size: 25px;
   line-height: 30px;
   padding-bottom: 4px;
 }
 
 .promo__item-of-week {
-  font-family: "Open-Sans-Bold", "Arial", sans-serif;
+  font-family: $fonts;
   font-size: 17px;
   line-height: 20px;
   text-transform: uppercase;
@@ -80,7 +80,7 @@
 .promo__price {
   display: flex;
   justify-content: center;
-  font-family: "Open-Sans-Bold", "Arial", sans-serif;
+  font-family: $fonts;
   font-size: 17px;
   line-height: 24px;
   padding-bottom: 25px;
@@ -155,7 +155,7 @@
     width: 287px;
     align-self: flex-start;
     align-items: center;
-    font-family: "Open-Sans-Bold", "Arial", sans-serif;
+    font-family: $fonts;
     font-size: 20px;
     line-height: 24px;
     padding-bottom: 34px;
@@ -170,7 +170,7 @@
   }
 
   .promo__title {
-    font-family: "Open-Sans-Bold", "Arial", sans-serif;
+    font-family: $fonts;
     font-size: 43px;
     line-height: 50px;
     color: #000000;
@@ -259,7 +259,6 @@
   }
 
   .promo__title {
-    font-family: "Open-Sans-Bold", "Arial", sans-serif;
     font-size: 53px;
     line-height: 57px;
   }

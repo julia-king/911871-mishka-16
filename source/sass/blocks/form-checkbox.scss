@@ -1,8 +1,14 @@
+.form-checkbox__wrapper {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0 30px;
+  box-sizing: border-box;
+}
+
 .form-checkbox__filter {
+  display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: flex-end;
-  padding-top: 60px;
   padding-bottom: 15px;
 }
 
@@ -75,4 +81,29 @@
 .form-checkbox__selection label:active::before {
   border-color: #444444;
   opacity: 0.3;
+}
+
+@media (min-width: $tablet-width) {
+  .form-checkbox__wrapper {
+    width: 668px;
+    padding: 0 50px;
+    box-sizing: border-box;
+    display: flex;
+  }
+
+  .form-checkbox__filter {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .form-checkbox__name {
+    padding-top: 60px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-checkbox__wrapper {
+    width: 1050px;
+    box-sizing: border-box;
+  }
 }

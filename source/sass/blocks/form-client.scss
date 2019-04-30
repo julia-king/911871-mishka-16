@@ -10,7 +10,7 @@
 
 .form-client__title {
   color: #63d1bb;
-  font-family: "Open-Sans-Bold", "Arial", sans-serif;
+  font-family: $fonts;
   font-size: 17px;
   line-height: 16px;
   text-transform: uppercase;
@@ -21,7 +21,7 @@
   padding-bottom: 15px;
 }
 
-.form-client__parameterr input {
+.form-client__parameter input {
   width: 100%;
   padding-bottom: 16px;
   border: 0;
@@ -31,7 +31,7 @@
   line-height: 18px;
 }
 
-.form-client__parameterr--phone input {
+.form-client__parameter--phone input {
   font-size: 19px;
   line-height: 18px;
   padding-bottom: 13px;
@@ -52,19 +52,47 @@
   padding-bottom: 24px;
 }
 
+.form-client__parameter-wrapper {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0 30px;
+  box-sizing: border-box;
+}
+
+.form-client__more-info-wrapper {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0 30px;
+  box-sizing: border-box;
+}
+
+.form-client__phone-wrapper {
+  width: 320px;
+  padding: 0 30px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.form-client__mail-wrapper {
+  width: 320px;
+  padding: 0 30px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
 .form-client__info-wrapper {
   width: 320px;
   margin: 0 auto;
+  padding: 0 30px;
+  box-sizing: border-box;
 }
 
 .form-client__parameter {
   display: flex;
   flex-direction: column;
-  width: 260px;
-  margin: 0 auto;
 }
 
-.form-client__parameter textarea {
+.form-client__textarea {
   padding: 14px;
   outline: 0;
   font-size: 17px;
@@ -86,19 +114,14 @@
   flex-direction: column;
 }
 
-.form-client__phone-wrapper {
-  width: 260px;
-  margin: 0 auto;
-}
-
-.form-client__parameter-wrapper {
+.form-client__parameter-inner {
   position: relative;
   padding-bottom: 32px;
 }
 
 .form-client__name-wrapper label {
   color: #000000;
-  font-family: "Open-Sans-Bold", "Arial", sans-serif;
+  font-family: $fonts;
   font-size: 17px;
   line-height: 18px;
   padding-bottom: 15px;
@@ -108,71 +131,57 @@
   position: relative;
 }
 
-.form-client__name-wrapper input::placeholder {
+.form-client__input::placeholder {
   color: #000000;
   opacity: 0.3;
 }
 
-.form-client__phone input::placeholder {
+.form-client__textarea::placeholder {
   color: #000000;
   opacity: 0.3;
 }
 
-.form-client__mail input::placeholder {
-  color: #000000;
-  opacity: 0.3;
-}
-
-.form-client__parameter--more-info input::placeholder {
-  color: #000000;
-  opacity: 0.3;
-}
-
-.form-client__parameter--more-info textarea::placeholder {
-  color: #000000;
-  opacity: 0.3;
-}
-
-.form-client__name-wrapper input:hover,
-.form-client__name-wrapper input:active {
+.form-client__input:hover,
+.form-client__input:active {
   border-color: #62d1ba;
 }
 
-.form-client__name-wrapper input:active::placeholder {
+.form-client__input:active::placeholder {
   border-color: #62d1ba;
   opacity: 1;
 }
 
-.order-form__option-wrapper input:hover,
-.order-form__option-wrapper input:active {
-  border-color: #62d1ba;
-}
-
-.form-client__parameter-wrapper:active svg,
-.form-client__parameter-wrapper:hover svg {
+.form-client__parameter-inner:active svg,
+.form-client__parameter-inner:hover svg {
   fill: #62d1ba;
   opacity: 1;
 }
 
-.form-client__parameter-wrapper input:active::placeholder {
+.form-client__input:active::placeholder {
   border-color: #62d1ba;
   opacity: 1;
 }
 
-.form-client__parameter--more-info:hover textarea {
+.form-client__textarea:hover {
   border-color: #62d1ba;
 }
 
-.form-client__parameter--more-info:active textarea::placeholder {
+.form-client__textarea:active::placeholder {
   border-color: #62d1ba;
   opacity: 1;
 }
 
-.form-client__parameter-wrapper svg {
+.form-client__parameter-inner svg {
   position: absolute;
   top: 2px;
   right: 9px;
   opacity: 0.2;
+}
+
+.form-client__button-wrapper {
+  width: 320px;
+  padding: 0 30px;
+  margin: 0 auto;
 }
 
 @media (min-width: $tablet-width) {
@@ -180,14 +189,8 @@
     display: flex;
     flex-direction: column;
     width: 668px;
+    padding: 0 50px;
     margin: 0 auto;
-  }
-
-  .form-client__parameter {
-    width: 668px;
-    margin: 0 auto;
-    padding-left: 50px;
-    padding-right: 50px;
   }
 
   .form-client__item--full-name {
@@ -195,6 +198,8 @@
   }
 
   .form-client__parameter-wrapper {
+    width: 680px;
+    padding: 0 50px;
     display: flex;
     flex-direction: row;
   }
@@ -233,35 +238,31 @@
 
   .form-client__info {
     background-color: #f1f1f1;
-    margin-bottom: 49px;
   }
 
   .form-client__phone {
     display: flex;
     flex-direction: column;
-    width: 668px;
-    margin: 0 auto;
-    padding-left: 52px;
-    padding-right: 50px;
     padding-bottom: 50px;
   }
 
   .form-client__mail {
     display: flex;
     flex-direction: column;
-    width: 668px;
-    margin: 0 auto;
-    padding-left: 52px;
-    padding-right: 50px;
     padding-bottom: 50px;
   }
 
   .form-client__phone-wrapper {
+    width: 680px;
+    padding: 0 50px;
     display: flex;
     flex-direction: row;
   }
 
   .form-client__mail-wrapper {
+    width: 680px;
+    padding: 0 50px;
+    box-sizing: border-box;
     display: flex;
     flex-direction: row;
   }
@@ -297,12 +298,10 @@
     padding-bottom: 18px;
   }
 
-  .form-client__more-info {
-    width: 668px;
-    margin: 0 auto;
-  }
-
   .form-client__more-info-wrapper {
+    width: 668px;
+    padding: 0 50px;
+    box-sizing: border-box;
     display: flex;
   }
 
@@ -321,6 +320,9 @@
   }
 
   .form-client__button-wrapper {
+    width: 668px;
+    padding: 0 50px;
+    box-sizing: border-box;
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
@@ -338,7 +340,34 @@
     width: 230px;
   }
 
-  .form-client__parameter-wrapper svg {
+  .form-client__parameter-inner svg {
     right: 22px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-client__parameter-wrapper {
+    width: 1050px;
+    box-sizing: border-box;
+  }
+
+  .form-client__phone-wrapper {
+    width: 1050px;
+    box-sizing: border-box;
+  }
+
+  .form-client__mail-wrapper {
+    width: 1050px;
+    box-sizing: border-box;
+  }
+
+  .form-client__more-info-wrapper  {
+    width: 1050px;
+    box-sizing: border-box;
+  }
+
+  .form-client__button-wrapper {
+    width: 1050px;
+    box-sizing: border-box;
   }
 }
