@@ -157,11 +157,6 @@
   opacity: 1;
 }
 
-.form-client__input:active::placeholder {
-  border-color: #62d1ba;
-  opacity: 1;
-}
-
 .form-client__textarea:hover {
   border-color: #62d1ba;
 }
@@ -361,7 +356,7 @@
     box-sizing: border-box;
   }
 
-  .form-client__more-info-wrapper  {
+  .form-client__more-info-wrapper {
     width: 1050px;
     box-sizing: border-box;
   }

@@ -1,4 +1,5 @@
 .features__item {
+  position: relative;
   padding-bottom: 30px;
 }
 
@@ -7,10 +8,6 @@
   font-size: 17px;
   line-height: 20px;
   text-align: left;
-}
-
-.features__item {
-  position: relative;
 }
 
 .features__item--ecology::before {
