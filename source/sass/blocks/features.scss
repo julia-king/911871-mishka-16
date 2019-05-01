@@ -1,4 +1,5 @@
 .features__item {
+  position: relative;
   padding-bottom: 30px;
 }
 
@@ -7,30 +8,6 @@
   font-size: 17px;
   line-height: 20px;
   text-align: left;
-}
-
-.features__item--ecology {
-  position: relative;
-}
-
-.features__item--scandinavian {
-  position: relative;
-}
-
-.features__item--like {
-  position: relative;
-}
-
-.features__item--handmade {
-  position: relative;
-}
-
-.features__item--national {
-  position: relative;
-}
-
-.features__item--gift {
-  position: relative;
 }
 
 .features__item--ecology::before {
