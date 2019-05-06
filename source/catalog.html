@@ -7,13 +7,12 @@
   <title>Каталог интернет-магазина "Мишка"</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="format-detection" content="telephone=no">
-  <link href="css/style.min.css" rel="stylesheet">
-  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet" type="text/css">
   <script>
     // Picture element HTML5 shiv
     document.createElement("picture");
   </script>
-  <script src="js/picturefill.js" async=""></script>
+  <script src="js/picturefill.js" async="" type="text/javascript"></script>
 </head>
 
 <body>
@@ -209,6 +208,9 @@
           <li class="catalog__item product">
             <a href="#" class="product__picture">
               <picture>
+                <source type="image/webp" media="(min-width: 1150px)" srcset="img/photo-hare-desktop@1x.webp 1x, img/photo-hare-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-hare-tablet@1x.webp 1x, img/photo-hare-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/photo-hare-mobile@1x.webp 1x, img/img/photo-hare-mobile@2x.webp 2x">
                 <source media="(min-width: 1150px)" srcset="img/photo-hare-desktop@1x.jpg 1x, img/photo-hare-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/photo-hare-tablet@1x.jpg 1x, img/photo-hare-tablet@2x.jpg 2x">
                 <img src="img/photo-hare-mobile@1x.jpg" srcset="img/photo-hare-mobile@2x.jpg 2x" alt="Зайчик-попрыгайчик">
@@ -232,6 +234,9 @@
           <li class="catalog__item product">
             <a href="#" class="product__picture">
               <picture>
+                <source type="image/webp" media="(min-width: 1150px)" srcset="img/photo-bowl-desktop@1x.webp 1x, img/photo-bowl-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-bowl-tablet@1x.webp 1x, img/photo-bowl-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/photo-bowl-mobile@1x.webp 1x, img/photo-bowl-mobile@2x.webp 2x">
                 <source media="(min-width: 1150px)" srcset="img/photo-bowl-desktop@1x.jpg 1x, img/photo-bowl-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/photo-bowl-tablet@1x.jpg 1x, img/photo-bowl-tablet@2x.jpg 2x">
                 <img src="img/photo-bowl-mobile@1x.jpg" srcset="img/photo-bowl-mobile@2x.jpg 2x" alt="Корзинка для белья">
@@ -255,9 +260,12 @@
           <li class="catalog__item product">
             <a href="#" class="product__picture">
               <picture>
+                <source type="image/webp" media="(min-width: 1150px)" srcset="img/photo-toys-desktop@1x.webp 1x, img/photo-toys-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-toys-tablet@1x.webp 1x, img/photo-toys-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/photo-toys-mobile@1x.webp 1x, img/photo-toys-mobile@2x.webp 2x">
                 <source media="(min-width: 1150px)" srcset="img/photo-toys-desktop@1x.jpg 1x, img/photo-toys-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/photo-toys-tablet@1x.jpg 1x, img/photo-toys-tablet@2x.jpg 2x">
-                <img src="img/photo-bowl-mobile@1x.jpg" srcset="img/photo-toys-mobile@2x.jpg 2x" alt="Большая корзинка для игруше">
+                <img src="img/photo-toys-mobile@1x.jpg" srcset="img/photo-toys-mobile@2x.jpg 2x" alt="Большая корзинка для игрушек">
               </picture>
             </a>
             <div class="product__text">
@@ -280,13 +288,15 @@
     </section>
 
     <section class="production">
-      <h3 class="production__title"><svg width="32" height="32">
-          <use xlink:href="#icon-video"></use>
-        </svg><span>Процесс производства</span></h3>
+      <div class="production__wrapper">
+      <h3 class="production__title">Процесс производства</h3>
       <div class="production__video">
         <div class="production__image">
 
           <picture>
+            <source type="image/webp" media="(min-width: 1150px)" srcset="img/video-desktop@1x.webp 1x, img/video-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/video-tablet@1x.webp 1x, img/video-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/video-mobile@1x.webp 1x, img/video-mobile@2x.webp 2x">
             <source media="(min-width: 1150px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
             <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
             <img src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" alt="Видео процесса производства">
@@ -297,13 +307,13 @@
           <p class="production__text">
             По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
           </p>
-          <div class="production__wrapper">
+          <div class="production__btn-wrapper">
             <button class="production__button button" type="button">Сделать заказ</button>
           </div>
         </div>
 
       </div>
-
+</div>
     </section>
 
 
@@ -354,7 +364,44 @@
       </div>
     </div>
   </footer>
-  <script src="js/script.js"></script>
+  <section class="modal modal-basket">
+        <div class="modal__wrapper">
+          <div class="modal__header">
+            <h2 class="modal__title">Добавить в корзину</h2>
+          </div>
+          <span class="modal__text">Выберите размер:</span>
+          <p class="modal__size">
+            <button class="modal__size-item modal__size-item--active" type="button">S</button>
+            <button class="modal__size-item" type="button">M</button>
+            <button class="modal__size-item" type="button">L</button>
+          </p>
+          <div class="modal__btn-wrapper">
+            <button class="modal__basket button" type="submit">Добавить</button>
+          </div>
+        </div>
+      </section>
+  <script src="js/script.js" type="text/javascript"></script>
+  <script src="js/script.js" type="text/javascript"></script>
+  <script>
+  var button = document.querySelectorAll(".product__basket");
+      var popup = document.querySelector(".modal");
+      for (var i = 0; i < button.length; i++) {
+        button[i].addEventListener("click", function (evt) {
+          evt.preventDefault();
+          popup.classList.add("modal-show");
+        });
+      }
+      window.addEventListener("keydown", function (evt) {
+        if (evt.keyCode === 27) {
+          evt.preventDefault();
+          if (popup.classList.contains("modal-show")) {
+            popup.classList.remove("modal-show");
+          }
+        }
+      });
+
+</script>
 </body>
+
 
 </html>

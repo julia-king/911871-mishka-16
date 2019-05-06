@@ -1,5 +1,6 @@
 @import "mixins/mixin.scss";
 @import "variables.scss";
+@import "core/normalize.scss";
 @import "core/fonts.scss";
 @import "core/index.scss";
 @import "blocks/page-header.scss";
@@ -26,3 +27,6 @@
 @import "blocks/form-radio.scss";
 @import "blocks/form-checkbox.scss";
 @import "blocks/form-client.scss";
+@import "blocks/contacts.scss";
+@import "blocks/production.scss";
+@import "blocks/modal.scss";
