@@ -12,6 +12,7 @@
 }
 
 .reviews__title {
+  font-family: $fonts;
   font-size: 25px;
   line-height: 30px;
   padding-bottom: 25px;
@@ -28,12 +29,6 @@
   background-size: 320px 100%;
   background-position: 50% 100%;
   transform: rotate(180deg);
-}
-
-.reviews__title {
-  font-family: $fonts;
-  font-size: 25px;
-  line-height: 30px;
 }
 
 .reviews__slider-controls {
@@ -100,7 +95,7 @@
     font-family: $fonts;
     font-size: 43px;
     line-height: 50px;
-    padding-bottom: 0px;
+    padding-bottom: 0;
   }
 
   .reviews__item {
@@ -143,7 +138,7 @@
     padding: 0;
     padding-top: 78px;
     padding-bottom: 150px;
-    background-position: 0px 0px;
+    background-position: 0 0;
   }
 
   .reviews__title {
@@ -152,7 +147,7 @@
     font-size: 53px;
     line-height: 57px;
     padding-left: 170px;
-    padding-bottom: 0px;
+    padding-bottom: 0;
   }
 
   .reviews__item {
