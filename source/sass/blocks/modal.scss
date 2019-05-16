@@ -111,6 +111,15 @@
   border-color: #c7c7c7;
 }
 
+.modal__basket:focus {
+  color: #ffffff;
+  background-color: #63d1bb;
+}
+
+.modal__size-item:focus {
+  border-color: #c7c7c7;
+}
+
 .modal__size-item:active {
   border-color: #63d1bb;
 }

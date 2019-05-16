@@ -10,6 +10,9 @@
 }
 
 .about__title {
+  margin: 0;
+  margin-top: 30px;
+  margin-bottom: 30px;
   font-size: 25px;
   line-height: 30px;
   text-align: left;
@@ -28,6 +31,14 @@
     box-sizing: border-box;
   }
 
+  .about__title {
+    font-size: 43px;
+    font-family: $fonts;
+    font-weight: bold;
+    line-height: 50px;
+    text-align: left;
+  }
+
   .about__list {
     display: flex;
   }
@@ -40,5 +51,11 @@
     margin: 0 auto;
     padding: 0 170px;
     box-sizing: border-box;
+  }
+
+  .about__title {
+    margin-top: 0px;
+    font-size: 53px;
+    line-height: 57px;
   }
 }

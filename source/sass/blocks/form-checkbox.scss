@@ -6,24 +6,41 @@
 }
 
 .form-checkbox__filter {
+  margin: 0;
+  padding: 0;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
-  padding-bottom: 15px;
+  padding-bottom: 8px;
+  font-weight: bold;
 }
 
 .form-checkbox__name {
+  position: relative;
   color: #63d1bb;
   font-size: 17px;
   line-height: 16px;
   text-transform: uppercase;
 }
 
+.form-checkbox__name::after {
+  content: "";
+
+  position: absolute;
+  top: 7px;
+  left: 62px;
+
+  width: 198px;
+  height: 1px;
+
+  background-color: #63d1bb;
+}
+
 .form-checkbox__selection {
   position: relative;
   display: flex;
   flex-direction: column;
-  padding-top: 35px;
+  padding-top: 30px;
 }
 
 .form-checkbox__selection label {
@@ -78,6 +95,10 @@
   border-color: #62d1ba;
 }
 
+.form-checkbox__selection label:focus::before {
+  border-color: #62d1ba;
+}
+
 .form-checkbox__selection label:active::before {
   border-color: #444444;
   opacity: 0.3;
@@ -86,24 +107,85 @@
 @media (min-width: $tablet-width) {
   .form-checkbox__wrapper {
     width: 668px;
-    padding: 0 50px;
+    padding: 0;
     box-sizing: border-box;
     display: flex;
   }
 
+  .form-checkbox__name::after {
+    display: none;
+  }
+
   .form-checkbox__filter {
     display: flex;
-    justify-content: flex-end;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding-top: 30px;
+    padding-left: 120px;
+    padding-bottom: 40px;
   }
 
   .form-checkbox__name {
-    padding-top: 60px;
+    padding-top: 70px;
+  }
+
+  .form-checkbox__selection label {
+    font-size: 19px;
+    line-height: 18px;
+  }
+
+  .form-checkbox__selection {
+    width: 50%;
+    margin-right: -10px;
+    padding-bottom: 15px;
+  }
+
+  .form-checkbox__selection label::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    border: 2px solid #000000;
+    cursor: pointer;
+  }
+
+  .form-checkbox__selection input:checked + label::after {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 10px;
+    width: 33px;
+    height: 22px;
+    background: url("../img/icon-tick.svg") no-repeat 50% 50%;
+    cursor: pointer;
   }
 }
 
 @media (min-width: $desktop-width) {
   .form-checkbox__wrapper {
     width: 1050px;
+    padding: 0 50px;
     box-sizing: border-box;
+  }
+
+  .form-checkbox__name {
+    padding-left: 10px;
+  }
+
+  .form-checkbox__filter {
+    padding-left: 70px;
+  }
+
+  .form-checkbox__selection {
+    width: 33%;
+    margin-right: -45px;
+  }
+
+  .form-checkbox__selection label {
+    padding-left: 80px;
   }
 }

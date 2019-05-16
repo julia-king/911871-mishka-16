@@ -4,8 +4,9 @@
   align-items: center;
 
   @include reset-list;
+  width: 185px;
 
-  padding-bottom: 30px;
+  padding-bottom: 20px;
   padding-top: 20px;
   margin: 0 auto;
 }
@@ -22,6 +23,8 @@
 
 @media (min-width: $tablet-width) {
   .social__list {
-    width: 250px;
+    width: 180px;
+    padding-top: 10px;
+    padding-left: 80px;
   }
 }

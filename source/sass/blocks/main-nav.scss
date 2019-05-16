@@ -13,8 +13,8 @@
 
 .main-nav__toggle {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 15px;
+  right: 25px;
   z-index: 2;
   display: block;
   width: 51px;
@@ -33,8 +33,8 @@
 }
 
 .main-nav--opened .main-nav__toggle {
-  top: 0;
-  right: 0;
+  top: 15px;
+  right: 25px;
 }
 
 .main-nav--opened .main-nav__toggle::before {
@@ -46,15 +46,19 @@
 }
 
 .main-nav__logo {
-  height: 90px;
+  height: 80px;
   order: 0;
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 320px;
+  margin: 0 auto;
+  padding: 0 30px;
+  box-sizing: border-box;
 }
 
 .main-nav__logo img {
-  width: 113px;
+  width: 86px;
   height: auto;
   cursor: pointer;
 }
@@ -122,15 +126,17 @@
   }
 
   .main-nav__logo {
-    padding-left: 0;
+    justify-content: flex-start;
+    align-items: flex-start;
     width: 149px;
-    min-height: 72px;
+    height: 90px;
     order: 1;
-    padding-bottom: 10px;
+    padding: 0;
+    padding-top: 10px;
   }
 
   .main-nav__logo img {
-    width: 149px;
+    width: 113px;
     height: 72px;
   }
 
@@ -146,5 +152,9 @@
 @media (min-width: $desktop-width) {
   .main-nav__wrapper {
     justify-content: center;
+  }
+
+  .main-nav__logo img {
+    width: 149px;
   }
 }

@@ -1,5 +1,4 @@
 .button {
-  width: 259px;
   height: 52px;
   font-size: 17px;
   line-height: 20px;
@@ -12,6 +11,11 @@
 }
 
 .button:hover {
+  color: #ffffff;
+  background-color: #444444;
+}
+
+.button:focus {
   color: #ffffff;
   background-color: #444444;
 }

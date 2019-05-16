@@ -5,6 +5,7 @@
   padding-bottom: 23px;
   border-top: 1px solid #ececec;
   font-weight: 700;
+  padding-left: 70px;
 }
 
 .site-list__item a:focus {
@@ -59,12 +60,11 @@
     order: 4;
     display: block;
     text-align: right;
-    margin-top: 0;
   }
 
   .site-list {
     margin-top: 0;
-    padding-right: 60px;
+    padding-right: 85px;
     align-items: center;
     order: 0;
     flex-grow: 1;

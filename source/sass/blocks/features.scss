@@ -4,10 +4,13 @@
 }
 
 .features__text {
-  padding-top: 50px;
   font-size: 17px;
   line-height: 20px;
   text-align: left;
+}
+
+.features__item--ecology .features__text {
+  padding-top: 55px;
 }
 
 .features__item--ecology::before {
@@ -19,6 +22,11 @@
   background-image: url("../img/icon-feature-flower.svg");
   background-repeat: no-repeat;
   background-size: 31px 37px;
+  left: 10px;
+}
+
+.features__item--scandinavian .features__text {
+  padding-top: 20px;
 }
 
 .features__item--scandinavian::before {
@@ -30,6 +38,11 @@
   background-image: url("../img/icon-feature-money.svg");
   background-repeat: no-repeat;
   background-size: 46px 27px;
+  top: -35px;
+}
+
+.features__item--like .features__text {
+  padding-top: 20px;
 }
 
 .features__item--like::before {
@@ -40,6 +53,12 @@
   height: 27px;
   background-image: url("../img/icon-feature-heart.svg");
   background-size: 33px 27px;
+  top: -32px;
+  left: 8px;
+}
+
+.features__item--handmade .features__text {
+  padding-top: 15px;
 }
 
 .features__item--handmade::before {
@@ -51,6 +70,12 @@
   background-image: url("../img/icon-feature-ball.svg");
   background-repeat: no-repeat;
   background-size: 34px 34px;
+  top: -35px;
+  left: 5px;
+}
+
+.features__item--national .features__text {
+  padding-top: 20px;
 }
 
 .features__item--national::before {
@@ -62,6 +87,12 @@
   background-image: url("../img/icon-feature-rocket.svg");
   background-repeat: no-repeat;
   background-size: 54px 23px;
+  top: -30px;
+  left: -5px;
+}
+
+.features__item--gift .features__text {
+  padding-top: 20px;
 }
 
 .features__item--gift::before {
@@ -73,8 +104,9 @@
   background-image: url("../img/icon-feature-gift.svg");
   background-repeat: no-repeat;
   background-size: 32px 32px;
+  top: -33px;
+  left: 2px;
 }
-
 
 @media (min-width: $tablet-width) {
   .features {
@@ -89,29 +121,82 @@
 
   .features__text {
     margin: 0;
+    font-size: 20px;
+    font-family: $fonts;
+    font-weight: bold;
+    line-height: 22px;
+    text-align: left;
+  }
+
+  .features__item--ecology .features__text {
+    padding-top: 75px;
   }
 
   .features__item--ecology {
     order: 0;
   }
 
+  .features__item--ecology::before {
+    top: 20px;
+  }
+
+  .features__item--scandinavian .features__text {
+    padding-top: 80px;
+  }
+
   .features__item--scandinavian {
     order: 3;
+  }
+
+  .features__item--scandinavian::before {
+    top: 30px;
+  }
+
+  .features__item--like .features__text {
+    padding-top: 85px;
   }
 
   .features__item--like {
     order: 5;
   }
 
+  .features__item--like::before {
+    top: 35px;
+  }
+
+  .features__item--handmade .features__text {
+    padding-top: 75px;
+  }
+
   .features__item--handmade {
     order: 2;
+  }
+
+  .features__item--handmade::before {
+    top: 25px;
+  }
+
+  .features__item--national .features__text {
+    padding-top: 80px;
   }
 
   .features__item--national {
     order: 4;
   }
 
+  .features__item--national::before {
+    top: 30px;
+  }
+
+  .features__item--gift .features__text {
+    padding-top: 85px;
+  }
+
   .features__item--gift {
     order: 6;
+  }
+
+  .features__item--gift::before {
+    top: 30px;
   }
 }

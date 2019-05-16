@@ -1,9 +1,8 @@
 .page-catalog__title {
   position: relative;
   margin: 0;
-  margin-top: -30px;
   padding-top: 70px;
-  padding-bottom: 70px;
+  padding-bottom: 75px;
   font-size: 27px;
   line-height: 30px;
   text-align: center;
@@ -12,6 +11,14 @@
 }
 
 @media (min-width: $tablet-width) {
+  .page-catalog__title {
+    margin-top: -42px;
+    padding-top: 95px;
+    padding-bottom: 90px;
+    font-size: 43px;
+    line-height: 50px;
+  }
+
   .page-catalog__title::after {
     content: "";
     position: absolute;
@@ -29,6 +36,12 @@
 }
 
 @media (min-width: $desktop-width) {
+  .page-catalog__title {
+    font-size: 53px;
+    line-height: 57px;
+    padding-bottom: 120px;
+  }
+
   .page-catalog__title::after {
     bottom: -2px;
     height: 37px;

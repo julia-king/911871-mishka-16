@@ -211,7 +211,7 @@
               <picture>
                 <source type="image/webp" media="(min-width: 1150px)" srcset="img/photo-hare-desktop@1x.webp 1x, img/photo-hare-desktop@2x.webp 2x">
                 <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-hare-tablet@1x.webp 1x, img/photo-hare-tablet@2x.webp 2x">
-                <source type="image/webp" srcset="img/photo-hare-mobile@1x.webp 1x, img/img/photo-hare-mobile@2x.webp 2x">
+                <source type="image/webp" srcset="img/photo-hare-mobile@1x.webp 1x, img/photo-hare-mobile@2x.webp 2x">
                 <source media="(min-width: 1150px)" srcset="img/photo-hare-desktop@1x.jpg 1x, img/photo-hare-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/photo-hare-tablet@1x.jpg 1x, img/photo-hare-tablet@2x.jpg 2x">
                 <img src="img/photo-hare-mobile@1x.jpg" srcset="img/photo-hare-mobile@2x.jpg 2x" alt="Зайчик-попрыгайчик">
@@ -219,7 +219,7 @@
             </a>
             <div class="product__text">
               <div class="product__description">
-                <p class="product__title">Зайчик-попрыгайчик</p>
+                <p class="product__title"><a href="#">Зайчик-попрыгайчик</a></p>
                 <p class="product__parameter">Рост 30 см, вес 200 г</p>
               </div>
               <div class="product__buy">
@@ -245,7 +245,7 @@
             </a>
             <div class="product__text">
               <div class="product__description">
-                <p class="product__title">Корзинка для белья</p>
+                <p class="product__title"><a href="#">Корзинка для белья</a></p>
                 <p class="product__parameter">Диаметр 15 см, высота 10 см</p>
               </div>
               <div class="product__buy">
@@ -271,7 +271,7 @@
             </a>
             <div class="product__text">
               <div class="product__description">
-                <p class="product__title">Большая корзинка для игрушек</p>
+                <p class="product__title"><a href="#">Большая корзинка для&nbsp;игрушек</a></p>
                 <p class="product__parameter">Диаметр 30 см, высота 30 см</p>
               </div>
               <div class="product__buy">
@@ -290,6 +290,7 @@
 
     <section class="production">
       <div class="production__wrapper">
+        <div class="production__container">
       <h3 class="production__title">Процесс производства</h3>
       <div class="production__video">
         <div class="production__image">
@@ -306,13 +307,14 @@
         </div>
         <div class="production__description">
           <p class="production__text">
-            По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
+            По просьбам наших любимых&nbsp;фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
           </p>
           <div class="production__btn-wrapper">
             <button class="production__button button" type="button">Сделать заказ</button>
           </div>
         </div>
 
+      </div>
       </div>
 </div>
     </section>
@@ -381,27 +383,24 @@
           </div>
         </div>
       </section>
-  <script src="js/script.js" type="text/javascript"></script>
-  <script src="js/script.js" type="text/javascript"></script>
-  <script>
-  var button = document.querySelectorAll(".product__basket");
-      var popup = document.querySelector(".modal");
-      for (var i = 0; i < button.length; i++) {
-        button[i].addEventListener("click", function (evt) {
+      <script src="js/script.js" type="text/javascript"></script>
+      <script>
+        var button = document.querySelector(".promo__button");
+        var popup = document.querySelector(".modal");
+        button.addEventListener("click", function(evt) {
           evt.preventDefault();
           popup.classList.add("modal-show");
         });
-      }
-      window.addEventListener("keydown", function (evt) {
-        if (evt.keyCode === 27) {
-          evt.preventDefault();
-          if (popup.classList.contains("modal-show")) {
-            popup.classList.remove("modal-show");
-          }
-        }
-      });
 
-</script>
+        window.addEventListener("keydown", function(evt) {
+          if (evt.keyCode === 27) {
+            evt.preventDefault();
+            if (popup.classList.contains("modal-show")) {
+              popup.classList.remove("modal-show");
+            }
+          }
+        });
+      </script>
 </body>
 
 

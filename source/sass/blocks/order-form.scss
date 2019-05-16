@@ -1,7 +1,11 @@
+.order-form {
+  margin-top: 23px;
+}
+
 .order-form__entry {
-  width: 320px;
   margin: 0 auto;
   padding: 0 30px;
+  box-sizing: border-box;
   font-size: 13px;
   font-weight: 400;
   line-height: 24px;
@@ -9,10 +13,16 @@
 }
 
 @media (min-width: $tablet-width) {
+  .order-form {
+    margin-top: 65px;
+  }
+
   .order-form__entry {
     width: 668px;
-    padding: 0 50px;
+    padding: 0;
     box-sizing: border-box;
+    font-size: 17px;
+    line-height: 30px;
   }
 
   .order-form__checkbox {
@@ -21,8 +31,12 @@
 }
 
 @media (min-width: $desktop-width) {
+  .order-form {
+    margin-top: 105px;
+  }
+
   .order-form__entry {
-    width: 1050px;
+    width: 700px;
     box-sizing: border-box;
   }
 }
