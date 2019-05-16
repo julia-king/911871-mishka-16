@@ -81,7 +81,7 @@
   opacity: 0.3;
 }
 
-.contacts__value a:after {
+.contacts__value a::after {
   content: "";
 
   position: absolute;
@@ -141,7 +141,7 @@
     line-height: 30px;
   }
 
-  .contacts__value a:after {
+  .contacts__value a::after {
     content: "";
 
     position: absolute;
@@ -171,7 +171,7 @@
     justify-content: center;
     width: 668px;
     margin: 0 auto;
-    padding-bottom: 0px;
+    padding-bottom: 0;
   }
 
   .contacts__button {

@@ -106,7 +106,7 @@
   transform: translateY(-5px);
 }
 
-.products__item--interior:active::after  {
+.products__item--interior:active::after {
   opacity: 0.3;
 }
 
@@ -203,7 +203,7 @@
     width: 668px;
     margin: 0 auto;
     display: flex;
-    padding-top: 0px;
+    padding-top: 0;
   }
 
   .products__list a {

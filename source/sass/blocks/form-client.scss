@@ -266,7 +266,7 @@
   .form-client__phone {
     display: flex;
     flex-direction: column;
-    padding-bottom: 0px;
+    padding-bottom: 0;
   }
 
   .form-client__mail {
@@ -276,7 +276,7 @@
 
   .form-client__phone-wrapper {
     width: 680px;
-    padding: 0 ;
+    padding: 0;
     display: flex;
     flex-direction: row;
   }

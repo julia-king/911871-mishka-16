@@ -166,11 +166,19 @@
     right: 40px;
   }
 
-  .reviews__slider-btn--next, .reviews__slider-btn--prev {
+  .reviews__slider-btn--next {
     border: 0;
   }
 
-  .reviews__slider-btn--next::before, .reviews__slider-btn--prev::before {
+  .reviews__slider-btn--prev {
+    border: 0;
+  }
+
+  .reviews__slider-btn--next::before {
+    padding: 13px 25px 13px 20px;
+  }
+
+  .reviews__slider-btn--prev::before {
     padding: 13px 25px 13px 20px;
   }
 
@@ -201,13 +209,12 @@
   .reviews__wrapper {
     position: relative;
     width: 1050px;
-    margin: 0;
     padding: 0;
     margin: 0 auto;
     padding-top: 78px;
     padding-bottom: 150px;
     padding-left: 50px;
-    padding-right: 0px;
+    padding-right: 0;
     box-sizing: border-box;
     background-position: 0 0;
   }
