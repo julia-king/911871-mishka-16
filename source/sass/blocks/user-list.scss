@@ -1,6 +1,5 @@
 .user-list a {
   display: block;
-  font-family: $fonts;
   padding-top: 23px;
   padding-bottom: 23px;
   border-top: 1px solid #ececec;
@@ -89,7 +88,7 @@
   }
 
   .user-list__item--basket svg {
-    padding-right: 38px;
+    padding-right: 30px;
   }
 
   .user-list__item--search {
@@ -109,6 +108,7 @@
 
 @media (min-width: $desktop-width) {
   .user-list {
+    width: 380px;
     flex-grow: 1;
     order: 2;
   }

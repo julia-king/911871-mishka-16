@@ -7,7 +7,6 @@
 .product__text {
   padding-left: 20px;
   padding-right: 20px;
-  font-family: $fonts;
   font-size: 15px;
   line-height: 24px;
   cursor: pointer;
@@ -79,7 +78,7 @@
   justify-content: space-between;
   font-size: 15px;
   line-height: 24px;
-  font-weight: 800;
+  font-weight: bold;
 }
 
 .product__basket svg {
@@ -146,7 +145,13 @@
   .product {
     display: flex;
     flex-wrap: wrap;
-    margin-right: 50px;
+    flex-direction: column;
+    margin-right: 4.5%;
+    width: 30%;
+  }
+
+  .product:last-of-type {
+    margin-right: 0;
   }
 
   .product__title {
@@ -156,6 +161,7 @@
 
   .product__text {
     height: 195px;
+    width: initial;
   }
 
   .product__parameter {

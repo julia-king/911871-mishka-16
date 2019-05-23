@@ -5,9 +5,10 @@ body {
 
   font-size: 17px;
   line-height: 24px;
-  font-family: $fonts;
+  font-family: "OpenSans", "Arial", sans-serif;
   color: #000000;
   background: #ffffff;
+  font-style: normal;
 }
 
 img {
@@ -31,4 +32,40 @@ input[type="radio"].visually-hidden {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.button {
+  display: block;
+  box-sizing: border-box;
+  height: 52px;
+  font-size: 17px;
+  line-height: 20px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: bold;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #444444;
+  background-color: #ffffff;
+  border: solid 2px #444444;
+  cursor: pointer;
+}
+
+.button:hover {
+  color: #ffffff;
+  background-color: #444444;
+}
+
+.button:focus {
+  color: #ffffff;
+  background-color: #444444;
+}
+
+.button:active {
+  color: #7c7c7c;
+  background-color: #444444;
 }

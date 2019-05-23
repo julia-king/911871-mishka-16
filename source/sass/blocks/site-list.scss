@@ -1,5 +1,4 @@
 .site-list a {
-  font-family: $fonts;
   display: block;
   padding-top: 23px;
   padding-bottom: 23px;
@@ -18,10 +17,6 @@
 
 .site-list__item a:active {
   opacity: 0.3;
-}
-
-.site-list__delivery {
-  display: none;
 }
 
 @media (min-width: $tablet-width) {
@@ -45,26 +40,12 @@
   .site-list__item {
     margin-right: 30px;
   }
-
-  .site-list__delivery {
-    order: 3;
-    display: block;
-    margin-top: 16px;
-    font-size: 15px;
-  }
 }
 
 @media (min-width: $desktop-width) {
-  .site-list__delivery {
-    width: 50%;
-    order: 4;
-    display: block;
-    text-align: right;
-  }
-
   .site-list {
     margin-top: 0;
-    padding-right: 85px;
+    padding-right: 70px;
     align-items: center;
     order: 0;
     flex-grow: 1;

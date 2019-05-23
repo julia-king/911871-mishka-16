@@ -122,14 +122,13 @@
   .features__text {
     margin: 0;
     font-size: 20px;
-    font-family: $fonts;
     font-weight: bold;
     line-height: 22px;
     text-align: left;
   }
 
   .features__item--ecology .features__text {
-    padding-top: 75px;
+    padding-top: 70px;
   }
 
   .features__item--ecology {
@@ -165,7 +164,7 @@
   }
 
   .features__item--handmade .features__text {
-    padding-top: 75px;
+    padding-top: 70px;
   }
 
   .features__item--handmade {
@@ -173,7 +172,7 @@
   }
 
   .features__item--handmade::before {
-    top: 25px;
+    top: 20px;
   }
 
   .features__item--national .features__text {

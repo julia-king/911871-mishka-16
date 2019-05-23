@@ -20,6 +20,7 @@
   color: #63d1bb;
   font-size: 17px;
   line-height: 16px;
+  font-weight: bold;
   text-transform: uppercase;
 }
 
@@ -91,15 +92,19 @@
   cursor: pointer;
 }
 
-.form-checkbox__selection label:hover::before {
+.form-checkbox__input:disabled + label {
+  opacity: 0.1;
+}
+
+.form-checkbox__input:hover + label::before {
   border-color: #62d1ba;
 }
 
-.form-checkbox__selection label:focus::before {
+.form-checkbox__input:focus + label::before {
   border-color: #62d1ba;
 }
 
-.form-checkbox__selection label:active::before {
+.form-checkbox__input:active + label::before {
   border-color: #444444;
   opacity: 0.3;
 }

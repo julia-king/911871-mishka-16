@@ -1,6 +1,5 @@
 @import "mixins/mixin.scss";
 @import "variables.scss";
-@import "core/fonts.scss";
 @import "core/index.scss";
 @import "blocks/page-header.scss";
 @import "blocks/main-nav.scss";
@@ -29,4 +28,21 @@
 @import "blocks/contacts.scss";
 @import "blocks/production.scss";
 @import "blocks/modal.scss";
-@import "blocks/button.scss";
+@import "blocks/modal-basket.scss";
+@import "blocks/modal-show.scss";
+
+@font-face {
+  font-weight: normal;
+  font-family: "OpenSans";
+  font-style: normal;
+  font-display: swap;
+  src: local("Open Sans Regular"), local("OpenSans-Regular"), url("../fonts/opensans.woff") format("woff"), url("../fonts/opensans.woff2") format("woff2");
+}
+
+@font-face {
+  font-weight: bold;
+  font-family: "OpenSans";
+  font-style: normal;
+  font-display: swap;
+  src: local("Open Sans Bold"), local("OpenSans-Bold"), url("../fonts/opensansbold.woff") format("woff"), url("../fonts/opensansbold.woff2") format("woff2");
+}

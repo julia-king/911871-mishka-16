@@ -17,7 +17,6 @@
   position: relative;
   color: #000000;
   width: 126px;
-  font-family: $fonts;
   font-size: 17px;
   line-height: 24px;
   padding-top: 10px;
@@ -81,6 +80,7 @@
 .production__play {
   background: inherit;
   border: 0;
+  border-radius: 50%;
   bottom: 0;
   right: 0;
   margin: auto;
@@ -225,7 +225,6 @@
     right: 50px;
     margin-left: auto;
     width: 148px;
-    font-family: $fonts;
     font-size: 20px;
     line-height: 24px;
     padding-left: 76px;

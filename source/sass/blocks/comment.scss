@@ -1,7 +1,6 @@
 .comment__text {
   margin: 0;
   font-size: 15px;
-  font-weight: 400;
   line-height: 30px;
   padding-bottom: 38px;
 }
@@ -9,7 +8,6 @@
 .comment__name {
   margin: 0;
   display: flex;
-  font-family: $fonts;
   font-size: 17px;
   font-style: normal;
   line-height: 24px;
@@ -19,7 +17,6 @@
 
 .comment__profile {
   font-size: 17px;
-  font-weight: 400;
   line-height: 30px;
 }
 
@@ -38,14 +35,12 @@
   }
 
   .comment__name {
-    font-family: $fonts;
     font-size: 18px;
   }
 
   .comment__profile {
     display: flex;
     padding-top: 4px;
-    line-height: 24px;
   }
 }
 

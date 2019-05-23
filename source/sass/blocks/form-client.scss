@@ -11,9 +11,9 @@
 .form-client__title {
   position: relative;
   color: #63d1bb;
-  font-family: $fonts;
   font-size: 17px;
   line-height: 16px;
+  font-weight: bold;
   text-transform: uppercase;
 }
 
@@ -40,6 +40,7 @@
   border: 0;
   border-bottom: 2px solid #000000;
   outline: 0;
+  font-family: "OpenSans", "Verdana", sans-serif;
   font-size: 17px;
   line-height: 18px;
 }
@@ -91,25 +92,19 @@
   box-sizing: border-box;
 }
 
-.form-client__parameter {
-  display: flex;
-  flex-direction: column;
-}
-
 .form-client__textarea {
   padding: 14px;
   outline: 0;
+  font-family: "OpenSans", "Verdana", sans-serif;
   font-size: 17px;
-  font-weight: 400;
   line-height: 18px;
-  border: 2px solid #ececec;
+  border: 2px solid #000000;
 }
 
 .form-client__required {
   padding-top: 5px;
   padding-bottom: 20px;
   font-size: 14px;
-  font-weight: 400;
   line-height: 16px;
 }
 
@@ -124,7 +119,6 @@
 
 .form-client__name-wrapper label {
   color: #000000;
-  font-family: $fonts;
   font-size: 17px;
   line-height: 18px;
   padding-bottom: 15px;
@@ -237,8 +231,16 @@
   }
 
   .form-client__name-wrapper {
-    flex-direction: row;
     padding-bottom: 35px;
+    flex-direction: row;
+  }
+
+  .form-client__phone .form-client__input {
+    background-color: #f1f1f1;
+  }
+
+  .form-client__mail .form-client__input {
+    background-color: #f1f1f1;
   }
 
   .form-client__name-wrapper label {
@@ -264,29 +266,25 @@
   }
 
   .form-client__phone {
-    display: flex;
-    flex-direction: column;
+
     padding-bottom: 0;
   }
 
   .form-client__mail {
-    display: flex;
-    flex-direction: column;
+
   }
 
   .form-client__phone-wrapper {
     width: 680px;
     padding: 0;
     display: flex;
-    flex-direction: row;
   }
 
   .form-client__mail-wrapper {
     width: 680px;
     padding: 0;
-    box-sizing: border-box;
     display: flex;
-    flex-direction: row;
+    box-sizing: border-box;
   }
 
   .form-client__parameter--phone {
