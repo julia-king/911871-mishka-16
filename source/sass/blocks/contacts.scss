@@ -111,11 +111,11 @@
   background-color: #62d1ba;
 }
 
-.contacts__link:hover:after {
+.contacts__link:hover::after {
   background-color: #46c1ae;
 }
 
-.contacts__link:focus:after {
+.contacts__link:focus::after {
   background-color: #46c1ae;
 }
 

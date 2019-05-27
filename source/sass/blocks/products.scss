@@ -216,7 +216,7 @@
     background-image: url("../img/hero-desktop@1x.jpg");
   }
 
-  .products:after {
+  .products::after {
     bottom: -19px;
     height: 37px;
     max-height: 37px;
