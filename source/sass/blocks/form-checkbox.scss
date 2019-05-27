@@ -41,7 +41,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  padding-top: 30px;
+  padding-top: 33px;
 }
 
 .form-checkbox__selection label {
@@ -51,7 +51,7 @@
   font-family: "Open-Sans-Bold", "Arial", sans-serif;
   font-size: 17px;
   line-height: 18px;
-  padding-bottom: 15px;
+  padding-bottom: 11px;
 }
 
 .form-checkbox__filter label::before {
@@ -127,16 +127,18 @@
     flex-direction: row;
     justify-content: space-between;
     box-sizing: border-box;
-    padding-top: 30px;
-    padding-left: 120px;
-    padding-bottom: 40px;
+    padding-top: 26px;
+    padding-left: 123px;
+    padding-bottom: 47px;
   }
 
   .form-checkbox__name {
-    padding-top: 70px;
+    padding-top: 65px;
   }
 
   .form-checkbox__selection label {
+    padding-left: 81px;
+    padding-top: 5px;
     font-size: 19px;
     line-height: 18px;
   }
@@ -144,7 +146,7 @@
   .form-checkbox__selection {
     width: 50%;
     margin-right: -10px;
-    padding-bottom: 15px;
+    padding-bottom: 10px;
   }
 
   .form-checkbox__selection label::before {

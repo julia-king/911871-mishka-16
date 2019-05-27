@@ -113,9 +113,13 @@
   }
 
   .form-radio__filter {
-    padding-top: 62px;
+    padding-top: 65px;
     padding-left: 132px;
     padding-bottom: 17px;
+  }
+
+  .form-radio__label {
+    font-size: 19px;
   }
 
   .form-radio__selection {
@@ -161,10 +165,10 @@
   }
 
   .form-radio__name {
-    padding-left: 10px;
+    padding-left: 12px;
   }
 
   .form-radio__filter {
-    padding-left: 80px;
+    padding-left: 75px;
   }
 }

@@ -6,6 +6,7 @@
 .features__text {
   font-size: 17px;
   line-height: 20px;
+  font-weight: bold;
   text-align: left;
 }
 
@@ -22,7 +23,8 @@
   background-image: url("../img/icon-feature-flower.svg");
   background-repeat: no-repeat;
   background-size: 31px 37px;
-  left: 10px;
+  left: 9px;
+  top: 2px;
 }
 
 .features__item--scandinavian .features__text {
@@ -42,7 +44,7 @@
 }
 
 .features__item--like .features__text {
-  padding-top: 20px;
+  padding-top: 19px;
 }
 
 .features__item--like::before {
@@ -53,12 +55,12 @@
   height: 27px;
   background-image: url("../img/icon-feature-heart.svg");
   background-size: 33px 27px;
-  top: -32px;
-  left: 8px;
+  top: -30px;
+  left: 7px;
 }
 
 .features__item--handmade .features__text {
-  padding-top: 15px;
+  padding-top: 17px;
 }
 
 .features__item--handmade::before {
@@ -70,8 +72,8 @@
   background-image: url("../img/icon-feature-ball.svg");
   background-repeat: no-repeat;
   background-size: 34px 34px;
-  top: -35px;
-  left: 5px;
+  top: -33px;
+  left: 3px;
 }
 
 .features__item--national .features__text {
@@ -105,7 +107,7 @@
   background-repeat: no-repeat;
   background-size: 32px 32px;
   top: -33px;
-  left: 2px;
+  left: 3px;
 }
 
 @media (min-width: $tablet-width) {
@@ -122,13 +124,12 @@
   .features__text {
     margin: 0;
     font-size: 20px;
-    font-weight: bold;
     line-height: 22px;
     text-align: left;
   }
 
   .features__item--ecology .features__text {
-    padding-top: 70px;
+    padding-top: 72px;
   }
 
   .features__item--ecology {
@@ -136,11 +137,11 @@
   }
 
   .features__item--ecology::before {
-    top: 20px;
+    top: 18px;
   }
 
   .features__item--scandinavian .features__text {
-    padding-top: 80px;
+    padding-top: 82px;
   }
 
   .features__item--scandinavian {
@@ -149,10 +150,11 @@
 
   .features__item--scandinavian::before {
     top: 30px;
+    left: 2px;
   }
 
   .features__item--like .features__text {
-    padding-top: 85px;
+    padding-top: 82px;
   }
 
   .features__item--like {
@@ -164,7 +166,7 @@
   }
 
   .features__item--handmade .features__text {
-    padding-top: 70px;
+    padding-top: 72px;
   }
 
   .features__item--handmade {
@@ -172,11 +174,12 @@
   }
 
   .features__item--handmade::before {
-    top: 20px;
+    top: 22px;
+    left: 4px;
   }
 
   .features__item--national .features__text {
-    padding-top: 80px;
+    padding-top: 82px;
   }
 
   .features__item--national {
@@ -184,11 +187,11 @@
   }
 
   .features__item--national::before {
-    top: 30px;
+    top: 32px;
   }
 
   .features__item--gift .features__text {
-    padding-top: 85px;
+    padding-top: 82px;
   }
 
   .features__item--gift {
@@ -197,5 +200,26 @@
 
   .features__item--gift::before {
     top: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .features__item--ecology .features__text,
+  .features__item--like .features__text,
+  .features__item--scandinavian .features__text {
+    padding-left: 5px;
+  }
+
+  .features__item--ecology::before {
+    top: 19px;
+    left: 15px;
+  }
+
+  .features__item--scandinavian::before {
+    left: 5px;
+  }
+
+  .features__item--like::before {
+    left: 13px;
   }
 }

@@ -36,13 +36,17 @@
 
 .form-client__parameter input {
   width: 100%;
-  padding-bottom: 16px;
+  padding-bottom: 17px;
   border: 0;
   border-bottom: 2px solid #000000;
   outline: 0;
   font-family: "OpenSans", "Verdana", sans-serif;
   font-size: 17px;
   line-height: 18px;
+}
+
+.form-client__info-wrapper {
+  margin-top: -5px;
 }
 
 .form-client__parameter--phone input {
@@ -53,6 +57,7 @@
 
 .form-client__item--full-name {
   padding-bottom: 10px;
+  padding-top: 5px;
 }
 
 .form-client__item--mail {
@@ -60,8 +65,8 @@
 }
 
 .form-client__item--more-info {
-  padding-top: 20px;
-  padding-bottom: 5px;
+  padding-top: 17px;
+  padding-bottom: 8px;
 }
 
 .form-client__parameter-wrapper {
@@ -99,11 +104,13 @@
   font-size: 17px;
   line-height: 18px;
   border: 2px solid #000000;
+  width: 88%;
+  height: 110px;
 }
 
 .form-client__required {
-  padding-top: 5px;
-  padding-bottom: 20px;
+  margin-top: 10px;
+  padding-bottom: 17px;
   font-size: 14px;
   line-height: 16px;
 }
@@ -172,8 +179,8 @@
 
 .form-client__parameter-inner svg {
   position: absolute;
-  top: 2px;
-  right: 9px;
+  top: 1px;
+  right: 6px;
   opacity: 0.2;
 }
 
@@ -186,11 +193,13 @@
 
 .form-client__button {
   width: 260px;
+  font-size: 17px;
+  padding-top: 0;
 }
 
 @media (min-width: $tablet-width) {
   .form-client {
-    margin-bottom: 25px;
+    margin-bottom: 27px;
   }
 
   .form-client__wrapper {
@@ -221,9 +230,13 @@
     width: 400px;
     flex-grow: 1;
     flex-direction: column;
-    padding-top: 63px;
-    padding-left: 137px;
-    padding-bottom: 15px;
+    padding-top: 60px;
+    padding-left: 126px;
+    padding-bottom: 17px;
+  }
+
+  .form-client__title {
+    padding-left: 5px;
   }
 
   .form-client__title::after {
@@ -232,6 +245,7 @@
 
   .form-client__name-wrapper {
     padding-bottom: 35px;
+    padding-right: 5px;
     flex-direction: row;
   }
 
@@ -256,7 +270,7 @@
     padding-right: 82px;
     font-size: 19px;
     line-height: 18px;
-    width: 75%;
+    width: 80%;
     flex-grow: 1;
     background-color: inherit;
   }
@@ -284,7 +298,7 @@
 
   .form-client__parameter--phone {
     width: 100%;
-    padding-top: 70px;
+    padding-top: 61px;
     padding-left: 128px;
     padding-right: 0;
   }
@@ -297,6 +311,7 @@
   }
 
   .form-client__parameter textarea {
+    width: 94%;
     font-size: 19px;
     line-height: 18px;
     padding-bottom: 16px;
@@ -304,7 +319,7 @@
 
   .form-client__item--phone {
     width: 60px;
-    padding-top: 55px;
+    padding-top: 50px;
   }
 
   .form-client__item--mail {
@@ -329,10 +344,14 @@
     width: 60px;
   }
 
+  .form-client__item--more-info .form-client__title {
+    padding-left: 0;
+  }
+
   .form-client__parameter--more-info {
     display: flex;
     flex-direction: column;
-    padding-bottom: 26px;
+    padding-bottom: 28px;
     padding-left: 105px;
     padding-right: 0;
     flex-grow: 1;
@@ -352,11 +371,12 @@
     font-size: 17px;
     font-weight: 400;
     line-height: 30px;
-    padding-top: 26px;
+    padding-top: 25px;
   }
 
   .form-client__button {
     width: 230px;
+    line-height: 16px;
   }
 
   .form-client__parameter-inner svg {
@@ -365,6 +385,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .form-client {
+    margin-bottom: 28px;
+  }
+
   .form-client__parameter-wrapper {
     width: 1050px;
     padding: 0 50px;
@@ -400,8 +424,34 @@
   }
 
   .form-client__name {
-    padding-left: 80px;
+    padding-left: 75px;
     padding-bottom: 20px;
+  }
+
+  .form-client__name-wrapper {
+    padding-right: 125px;
+    padding-bottom: 34px;
+  }
+
+  .form-client__item--mail {
+    padding-top: 25px;
+  }
+
+  .form-client__parameter-inner .form-client__input {
+    padding-bottom: 13px;
+    padding-right: 24px;
+  }
+
+  .form-client__name-wrapper label {
+    padding-top: 5px;
+  }
+
+  .form-client__parameter-inner svg {
+    right: 130px;
+  }
+
+  .form-client__title {
+    padding-left: 0;
   }
 
   .form-client__item--phone {
@@ -413,13 +463,9 @@
     padding-left: 10px;
   }
 
-  .form-client__parameter input {
-    width: 85%;
-  }
-
   .form-client__parameter--phone {
-    padding-left: 65px;
-    padding-top: 65px;
+    padding-left: 63px;
+    padding-top: 60px;
   }
 
   .form-client__parameter--mail {
@@ -439,9 +485,15 @@
 
   .form-client__parameter textarea {
     padding-bottom: 18px;
+    height: 105px;
+    width: 95.6%;
   }
 
   .form-client__required {
-    padding-top: 22px;
+    padding-top: 25px;
+  }
+
+  .form-client__button {
+    margin-top: 5px;
   }
 }

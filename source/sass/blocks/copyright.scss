@@ -5,7 +5,7 @@
 }
 
 .copyright__text {
-  padding-right: 35px;
+  padding-right: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -20,7 +20,7 @@
 }
 
 .copyright__link {
-  padding-top: 3px;
+  padding-top: 5px;
 }
 
 .copyright__link svg {
@@ -41,6 +41,10 @@
   .copyright {
     padding-top: 0;
     padding-bottom: 0;
+  }
+
+  .copyright__link {
+    padding-top: 0;
   }
 
   .copyright__text {

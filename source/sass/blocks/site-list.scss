@@ -29,6 +29,7 @@
     order: 2;
     flex-grow: 1;
     width: 60%;
+    font-size: 15px;
   }
 
   .site-list a {
@@ -38,19 +39,20 @@
   }
 
   .site-list__item {
-    margin-right: 30px;
+    margin-right: 37px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .site-list {
     margin-top: 0;
-    padding-right: 70px;
+    padding-right: 74px;
     align-items: center;
     order: 0;
     flex-grow: 1;
     justify-content: space-between;
     width: auto;
+    font-size: 17px;
   }
 
   .site-list__item {
