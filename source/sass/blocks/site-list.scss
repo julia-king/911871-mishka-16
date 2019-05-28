@@ -1,10 +1,10 @@
 .site-list a {
   display: block;
   padding-top: 23px;
-  padding-bottom: 23px;
+  padding-bottom: 32px;
   border-top: 1px solid #ececec;
   font-weight: 700;
-  padding-left: 70px;
+  padding-left: 75px;
 }
 
 .site-list__item a:focus {
@@ -57,5 +57,17 @@
 
   .site-list__item {
     margin-right: 0;
+    position: relative;
+  }
+
+  .site-list__item:first-of-type::after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    background-color: #ececec;
+    bottom: 13px;
+    left: 140px;
+    width: 90px;
+    transform: rotate(90deg);
   }
 }

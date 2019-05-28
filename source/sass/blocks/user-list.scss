@@ -1,10 +1,18 @@
 .user-list a {
   display: block;
   padding-top: 23px;
-  padding-bottom: 23px;
+  padding-bottom: 30px;
   border-top: 1px solid #ececec;
   font-weight: 700;
   padding-left: 30px;
+}
+
+.user-list__item--search svg {
+  padding-right: 25px;
+}
+
+.user-list__link--basket svg {
+  padding-right: 20px;
 }
 
 .user-list__item a:focus {
