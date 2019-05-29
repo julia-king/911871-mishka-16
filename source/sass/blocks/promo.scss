@@ -24,7 +24,7 @@
 }
 
 .promo__name {
-  padding-bottom: 23px;
+  padding-bottom: 20px;
 }
 
 .promo__title {
@@ -90,7 +90,7 @@
 @media (min-width: $tablet-width) {
   .promo {
     padding-bottom: 70px;
-    margin-bottom: 50px;
+    margin-bottom: 47px;
   }
 
   .promo::after {
@@ -139,7 +139,7 @@
     width: 282px;
     font-size: 17px;
     line-height: 30px;
-    padding-bottom: 40px;
+    padding-bottom: 38px;
     padding-top: 28px;
     color: #444444;
   }
@@ -169,6 +169,7 @@
   }
 
   .promo__title {
+    margin-left: -3px;
     margin-right: auto;
     font-size: 43px;
     line-height: 50px;
@@ -264,7 +265,7 @@
   .promo__description {
     padding-top: 34px;
     padding-left: 175px;
-    padding-bottom: 52px;
+    padding-bottom: 49px;
   }
 
   .promo__list {

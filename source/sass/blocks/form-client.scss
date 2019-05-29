@@ -46,7 +46,7 @@
 }
 
 .form-client__info-wrapper {
-  margin-top: -5px;
+  margin-top: -8px;
 }
 
 .form-client__parameter--phone input {
@@ -57,7 +57,7 @@
 
 .form-client__item--full-name {
   padding-bottom: 10px;
-  padding-top: 5px;
+  padding-top: 10px;
 }
 
 .form-client__item--mail {
@@ -216,7 +216,7 @@
   }
 
   .form-client__item--full-name {
-    padding-top: 50px;
+    padding-top: 53px;
   }
 
   .form-client__parameter-wrapper {
@@ -232,7 +232,7 @@
     flex-direction: column;
     padding-top: 60px;
     padding-left: 126px;
-    padding-bottom: 17px;
+    padding-bottom: 21px;
   }
 
   .form-client__title {
@@ -244,7 +244,7 @@
   }
 
   .form-client__name-wrapper {
-    padding-bottom: 35px;
+    padding-bottom: 34px;
     padding-right: 5px;
     flex-direction: row;
   }
@@ -306,7 +306,7 @@
   .form-client__parameter--mail {
     width: 100%;
     padding-top: 33px;
-    padding-left: 100px;
+    padding-left: 105px;
     padding-right: 0;
   }
 
@@ -314,7 +314,8 @@
     width: 94%;
     font-size: 19px;
     line-height: 18px;
-    padding-bottom: 16px;
+    padding-bottom: 13px;
+    padding-top: 13px;
   }
 
   .form-client__item--phone {
@@ -324,7 +325,7 @@
 
   .form-client__item--mail {
     width: 90px;
-    padding-top: 20px;
+    padding-top: 23px;
     padding-bottom: 18px;
   }
 
@@ -351,7 +352,7 @@
   .form-client__parameter--more-info {
     display: flex;
     flex-direction: column;
-    padding-bottom: 28px;
+    padding-bottom: 30px;
     padding-left: 105px;
     padding-right: 0;
     flex-grow: 1;
@@ -371,12 +372,13 @@
     font-size: 17px;
     font-weight: 400;
     line-height: 30px;
-    padding-top: 25px;
+    padding-top: 24px;
   }
 
   .form-client__button {
     width: 230px;
     line-height: 16px;
+    padding-top: 5px;
   }
 
   .form-client__parameter-inner svg {
@@ -425,7 +427,7 @@
 
   .form-client__name {
     padding-left: 75px;
-    padding-bottom: 20px;
+    padding-bottom: 22px;
   }
 
   .form-client__name-wrapper {

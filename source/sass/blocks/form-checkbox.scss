@@ -41,7 +41,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  padding-top: 33px;
+  padding-top: 34px;
 }
 
 .form-checkbox__selection label {
@@ -51,7 +51,7 @@
   font-family: "Open-Sans-Bold", "Arial", sans-serif;
   font-size: 17px;
   line-height: 18px;
-  padding-bottom: 11px;
+  padding-bottom: 9px;
 }
 
 .form-checkbox__filter label::before {
@@ -127,9 +127,9 @@
     flex-direction: row;
     justify-content: space-between;
     box-sizing: border-box;
-    padding-top: 26px;
+    padding-top: 23px;
     padding-left: 123px;
-    padding-bottom: 47px;
+    padding-bottom: 50px;
   }
 
   .form-checkbox__name {
